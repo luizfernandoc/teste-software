@@ -2,13 +2,17 @@
 
 **nome do sistema**
 
-*versão x.x*
+*versão 1.0*
 
 ## Histórico das alterações
 
    Data    | Versão |    Descrição   | Autor(a)
 -----------|--------|----------------|-----------------
-dd/mm/aaaa |  x.x   | Release incial | Danielle Farias
+13/11/2024 |  1.0   | Release incial | Luiz Fernando Contarato
+13/11/2024 |  1.0   | Release incial | Luiz Fernando Contarato
+13/11/2024 |  1.0   | Release incial | Luiz Fernando Contarato
+13/11/2024 |  1.0   | Release incial | Luiz Fernando Contarato
+
 
 
 ## 1 - Introdução
