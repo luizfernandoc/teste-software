@@ -1,6 +1,6 @@
 # Plano de Teste
 
-**nome do sistema**
+**E-commerce**
 
 *versão 1.0*
 
@@ -40,15 +40,24 @@ Caso seja necessário, liste aqui os requisitos a testar subdivididos em casos d
 
 Identificador do caso de uso | Nome do caso de uso
 -----------------------------|---------------------
-id UC1                       |       nome UC1
-id UC2                       |       nome UC2
+id UC1                       |       Cadastro de Cliente
+id UC2                       |       	Login de Cliente
+id UC3                       |   Adicionar Produto ao Carrinho
+id UC4                       |         Finalizar Compra
+id UC5                       |           Pagamento
+
+
 
 ### Requisitos não-funcionais:
 
 Identificador do requisito   | Nome do requisito
 -----------------------------|---------------------
-id req1                      |      nome req1
-id req2                      |      nome req2
+id RNF1	                    |      Tempo de resposta das páginas inferior a 2 segundos
+id RNF2                      |      Capacidade de suporte a 100 usuários simultâneos
+id RNF3                      |      Segurança dos dados do cliente (LGPD compliance)
+id RNF4                      |      Compatibilidade com navegadores Chrome e Firefox
+
+
 
 
 ## 3 - Tipos de teste
@@ -404,11 +413,15 @@ Esta seção deve descrever os recursos humanos, de ambiente de teste (hardware 
 
 ### 4.1 - Ambiente de teste - Software e Hardware
 
-Descreva aqui o hardware e sua configuração, e o software. Por exemplo, o sistema operacional, browsers, servidor web, etc.
+4.1 - Ambiente de Teste - Software e Hardware
+Software: Sistema operacional Windows 10, Linux, navegadores Chrome e Firefox (últimas versões).
+Hardware: Processador Intel i5 ou superior, 8GB de RAM, conexão à internet estável.
+
 ### 4.2 - Ferramenta de teste
 
-Descreva aqui as ferramentas específicas de teste usadas no projeto.
-
+Selenium (teste de interface)
+JMeter (teste de performance e carga)
+OWASP ZAP (teste de segurança)
 
 ## 5 - Cronograma
 
