@@ -764,18 +764,25 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
 ## 5.0 - Template de Reporte de Defeitos
 
 ---
-nome: Reporte de Defeitos
-sobre: Crie um relatório para nos ajudar a melhora
-título: ''
-labels: ''
-responsáveis: ''
+nome: Reporte de Defeitos <br/>
+
+sobre: Crie um relatório para nos ajudar a melhora<br/>
+
+título: ''<br/>
+
+labels: ''<br/>
+
+responsáveis: ''<br/>
+
 
 ---
 
-**Descreva o bug**
+**Descreva o bug**<br/>
+
 Uma descrição clara e concisa do que é o bug.
 
-**Para Reproduzir**
+**Para Reproduzir**<br/>
+
 Passos para reproduzir o comportamento:
 
 1. Vá para '...'
@@ -783,24 +790,29 @@ Passos para reproduzir o comportamento:
 3. Role até '....'
 4. Veja o erro
 
-**Comportamento esperado**
+**Comportamento esperado**<br/>
+
 Uma descrição clara e concisa do que você esperava que acontecesse.
 
-**Capturas de tela**
+**Capturas de tela**<br/>
+
 Se aplicável, adicione capturas de tela para ajudar a explicar o problema.
 
-**Desktop (complete as seguintes informações):**
+**Desktop (complete as seguintes informações):** <br/>
+
 - Sistema Operacional: [ex. iOS]
 - Navegador [ex. Chrome, Safari]
 - Versão [ex. 22]
 
-**Smartphone (complete as seguintes informações):**
+**Smartphone (complete as seguintes informações):** <br/>
+
 - Dispositivo: [ex. iPhone6]
 - Sistema Operacional: [ex. iOS8.1]
 - Navegador [ex. navegador padrão, Safari]
 - Versão [ex. 22]
 
-**Contexto adicional**
+**Contexto adicional** <br/>
+
 Adicione qualquer outro contexto sobre o problema aqui.
 
 ## 6 - Cronograma
