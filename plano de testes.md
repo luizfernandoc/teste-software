@@ -761,7 +761,49 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
    OWASP ZAP: Para testes de segurança e verificação de vulnerabilidades.<br/>
 
 
-## 5 - Cronograma
+## 5.0 - Template de Reporte de Defeitos
+
+---
+nome: Reporte de Defeitos
+sobre: Crie um relatório para nos ajudar a melhora
+título: ''
+labels: ''
+responsáveis: ''
+
+---
+
+**Descreva o bug**
+Uma descrição clara e concisa do que é o bug.
+
+**Para Reproduzir**
+Passos para reproduzir o comportamento:
+
+1. Vá para '...'
+2. Clique em '....'
+3. Role até '....'
+4. Veja o erro
+
+**Comportamento esperado**
+Uma descrição clara e concisa do que você esperava que acontecesse.
+
+**Capturas de tela**
+Se aplicável, adicione capturas de tela para ajudar a explicar o problema.
+
+**Desktop (complete as seguintes informações):**
+- Sistema Operacional: [ex. iOS]
+- Navegador [ex. Chrome, Safari]
+- Versão [ex. 22]
+
+**Smartphone (complete as seguintes informações):**
+- Dispositivo: [ex. iPhone6]
+- Sistema Operacional: [ex. iOS8.1]
+- Navegador [ex. navegador padrão, Safari]
+- Versão [ex. 22]
+
+**Contexto adicional**
+Adicione qualquer outro contexto sobre o problema aqui.
+
+## 6 - Cronograma
 
 Tipo de teste      | Duração | Data de Início | Data de Término
 -------------------|---------|----------------|-----------------
