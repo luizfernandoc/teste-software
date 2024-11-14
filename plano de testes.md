@@ -73,7 +73,7 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
 | id UC9                       | Avaliação e Feedback de Produtos   |
 | id UC10                      | Atualização de Dados Cadastrais    |
 
-
+<br/>
 
 ### Requisitos não-funcionais:
 
