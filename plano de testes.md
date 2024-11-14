@@ -1,6 +1,6 @@
 # Plano de Teste
 
-**E-commerce**
+**Aplicação: E-commerce**
 
 
 *versão 1.0*
