@@ -1,6 +1,6 @@
-# Plano de Teste
+# Plano de Teste - IEEE 829
 
-**Aplicação: E-commerce**
+**Nome do Sistema**: E-commerce
 
 
 *versão 1.0*
@@ -780,7 +780,7 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
 
 ---
 
-### 1. Informações Básicas
+### 5.1 Informações Básicas
 
 - **Data do Relato:** [Data em que o bug foi reportado]
 - **Relatado por:** [Nome do responsável por relatar o bug]
@@ -789,7 +789,7 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
 - **Severidade:** [Crítica, Alta, Média, Baixa]
 
 
-### 2. Descrição do Bug
+### 5.2 Descrição do Bug
 
 **Descrição Completa**<br/>
 
@@ -812,7 +812,7 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
 
   [Explique o comportamento atual observado no sistema.]
 
-### 3. Anexos
+### 5.3 Anexos
 
 **Capturas de tela**<br/>
 
@@ -826,7 +826,7 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
 
   [Logs ou mensagens de erro do sistema relacionados, se aplicável]
 
-### 4. Ambiente de Teste
+### 5.4 Ambiente de Teste
 
 **Desktop (complete as seguintes informações):** <br/>
 
@@ -844,7 +844,7 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
   - Rede:[Wi-Fi, 3G, 4G, etc. (se relevante)]
 
 
-### 5. Status do Bug
+### 5.6 Status do Bug
 
 - **Status Atual:**
   - [ ] Novo
@@ -859,7 +859,36 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
 
 ---
 
-## 6 - Cronograma
+
+## 6. Critérios de Sucesso e Falha dos Testes
+
+- **Critério de Sucesso**: O teste será considerado bem-sucedido se:<br/>
+  - O tempo de resposta for inferior a 2 segundos para páginas principais.
+  - Nenhum erro crítico for encontrado.
+  - Todos os requisitos de privacidade da LGPD forem atendidos.
+- **Critério de Falha**: O teste será considerado uma falha se:<br/>
+  - O tempo de resposta ultrapassar o limite definido.
+  - Erros críticos comprometerem a operação do sistema.
+  - Não conformidade com requisitos essenciais de segurança de dados.
+
+ 
+## 7. Cronograma de Testes
+
+| Atividade           | Data de Início | Data de Término | Responsável       |
+|---------------------|----------------|-----------------|-------------------|
+| Teste de Interface  | 15/11/2024     | 20/11/2024      | Rodolfo Pedro     |
+| Teste de Integração | 21/11/2024     | 25/11/2024      | Guilherme Jenner  |
+| Teste de Segurança  | 26/11/2024     | 30/11/2024      | Luiz Fernando     |
+
+
+## 8. Critérios de Conclusão dos Testes
+
+- **Critério de Conclusão**: O teste será considerado completo se:
+  - 100% dos casos de uso e requisitos críticos forem testados e aprovados.
+  - Nenhum erro de alta prioridade permanecer pendente.
+
+
+## 9 - Cronograma
 
 Tipo de teste      | Duração | Data de Início | Data de Término
 -------------------|---------|----------------|-----------------
