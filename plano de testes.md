@@ -21,12 +21,13 @@
 
    Este documento descreve os requisitos a testar, os  tipos de testes definidos para cada iteração, os recursos de hardware e software a serem empregados e o cronograma dos testes ao longo do projeto. As seções referentes aos requisitos, recursos e cronograma servem para permitir ao gerente do projeto acompanhar a evolução dos testes.
 
-   Com esse documento, você deve:
-      - Identificar informações de projeto existentes e os componentes de software que devem ser testados.
-      - Listar os Requisitos a testar.
-      - Recomendar e descrever as estratégias de teste a serem empregadas.
-      - Identificar os recursos necessários e prover uma estimativa dos esforços de teste.
-      - Listar os elementos resultantes do projeto de testes.
+  Com esse documento, você deve:
+   
+  - Identificar informações de projeto existentes e os componentes de software que devem ser testados.
+  - Listar os Requisitos a testar.
+  - Recomendar e descrever as estratégias de teste a serem empregadas.
+  - Identificar os recursos necessários e prover uma estimativa dos esforços de teste.
+  - Listar os elementos resultantes do projeto de testes.
 
 
 ### 1.1 Propósito
@@ -99,18 +100,19 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
    
    Com base no guia de testes, indique os tipos de testes que melhor se adéquam aos requisitos, tipo da aplicação e seus recursos disponíveis e, caso necessário complemente ou forneça mais detalhes da técnica e dos critérios de completude sugeridos no guia para cada tipo de teste indicado.
 
-   - Teste de interface de usuário;
-   - Teste de performance;
-   - Teste de carga;
-   - Teste de stress;
-   - Teste de segurança e controle de acesso;
-   - Teste de instalação;
-   - Teste de Funcionalidade;
-   - Teste de Integração.
+   - Teste de interface de usuário - Verificar a consistência visual, responsividade e acessibilidade;
+   - Teste de performance - Avaliar o tempo de resposta e a capacidade de suportar carga;
+   - Teste de carga - Testar o desempenho em condições de carga máxima e identificar o ponto de falha;
+   - Teste de stress - Testar o desempenho em condições de carga máxima e identificar o ponto de falha;
+   - Teste de segurança e controle de acesso - Garantir a conformidade com requisitos de segurança, incluindo LGPD;
+   - Teste de instalação - Verificar se o sistema pode ser instalado e configurado corretamente;
+   - Teste de Funcionalidade -Testar se cada funcionalidade cumpre o comportamento esperado;
+   - Teste de Integração - Validar se os módulos e componentes interagem de forma correta.
 
 
-### 3.1 - Teste de Interface de Usuário 
+### 3.1 - Teste de Interface de Usuário
 
+<br/>
 <table>
     <tr>
         <th>
@@ -169,7 +171,6 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
     </tr>
 </table>
 <br/>
-
 
 
 ### 3.2 - Teste de Persistência de Dados
@@ -235,9 +236,9 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
 <br/>
 
 
-
 ### 3.3 - Teste de Integração
 
+<br/>
 <table>
     <tr>
         <th>
@@ -296,7 +297,6 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
     </tr>
 </table>
 <br/>
-
 
 
 ### 3.4 - Teste de Tempo de Resposta
@@ -362,9 +362,9 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
 <br/>
 
 
-
 ### 3.5 - Teste de Performance
 
+<br/>
 <table>
     <tr>
         <th>
@@ -425,9 +425,9 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
 <br/>
 
 
-
 ### 3.6 Teste de Funcionalidade
 
+<br/>
 <table>
     <tr>
         <th>
@@ -488,9 +488,9 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
 <br/>
 
 
-
 ### 3.7 Teste de Instalação
 
+<br/>
 <table>
     <tr>
         <th>
@@ -551,9 +551,9 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
 <br/>
 
 
-
 ### 3.8 Teste de Segurança e Controle de Acesso
 
+<br/>
 <table>
     <tr>
         <th>
@@ -614,9 +614,9 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
 <br/>
 
 
-
 ### 3.8 Teste de Stress
 
+<br/>
 <table>
     <tr>
         <th>
@@ -677,9 +677,9 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
 <br/>
 
 
-
 ### 3.9 Teste de Carga
 
+<br/>
 <table>
     <tr>
         <th>
@@ -740,7 +740,6 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
 <br/>
 
 
-
 ## 4 - Recursos
    
    Esta seção deve descrever os recursos humanos, de ambiente de teste (hardware e software) e de ferramentas de automatização de testes necessários para execução dos testes que devem ser descritos nas subseções que seguem.
@@ -750,6 +749,8 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
    Software: Sistema operacional Windows 10, Linux, navegadores Chrome e Firefox (últimas versões).<br/>
 
    Hardware: Processador Intel i5 ou superior, 8GB de RAM, conexão à internet estável.<br/>
+
+   Rede: Simulação de diferentes condições de rede (Wi-Fi, 3G, 4G) para avaliar a experiência em cenários reais.<br/>
 
 
 ### 4.2 - Ferramenta de teste
@@ -766,22 +767,33 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
   Este template serve para facilitar o registro de bugs, garantindo que todas as informações essenciais estejam documentadas de forma clara. Use os campos abaixo para descrever o problema em detalhes:
   
 ---
-nome: Reporte de Defeitos <br/>
 
-sobre: Crie um relatório para nos ajudar a melhora<br/>
+Nome: Reporte de Defeitos <br/>
 
-título: ''<br/>
+Sobre: Crie um relatório para nos ajudar a melhora<br/>
 
-labels: ''<br/>
+Título do Bug: ''<br/>
 
-responsáveis: ''<br/>
+Labels: ''<br/>
 
+Responsáveis: ''<br/>
 
 ---
 
-**Descreva o bug**<br/>
+### 1. Informações Básicas
 
-Uma descrição clara e concisa do que é o bug.
+- **Data do Relato:** [Data em que o bug foi reportado]
+- **Relatado por:** [Nome do responsável por relatar o bug]
+- **Versão do Sistema:** [Versão específica do sistema ou build em que o bug foi encontrado]
+- **Prioridade:** [Alta, Média, Baixa]
+- **Severidade:** [Crítica, Alta, Média, Baixa]
+
+
+### 2. Descrição do Bug
+
+**Descrição Completa**<br/>
+
+[Descreva o problema de forma detalhada, incluindo o que está acontecendo e por que ele é considerado um problema.]
 
 **Para Reproduzir**<br/>
 
@@ -792,19 +804,36 @@ Passos para reproduzir o comportamento:
 3. Role até '....'
 4. Veja o erro
 
-**Comportamento esperado**<br/>
+**Resultado Esperado**<br/>
 
-Uma descrição clara e concisa do que você esperava que acontecesse.
+[Explique qual deveria ser o comportamento correto do sistema.]
+
+**Resultado Atual**<br/>
+
+[Explique o comportamento atual observado no sistema.]
+
+### 3. Anexos
 
 **Capturas de tela**<br/>
 
-Se aplicável, adicione capturas de tela para ajudar a explicar o problema.
+[Link ou anexar imagem que mostra o problema, se aplicável]
+
+**Vídeos**<br/>
+
+[Link ou anexar vídeo que reproduz o problema, se aplicável]
+
+**Logs de Erro**
+
+[Logs ou mensagens de erro do sistema relacionados, se aplicável]
+
+### 4. Ambiente de Teste
 
 **Desktop (complete as seguintes informações):** <br/>
 
 - Sistema Operacional: [ex. iOS]
 - Navegador [ex. Chrome, Safari]
 - Versão [ex. 22]
+- Rede:[Wi-Fi, 3G, 4G, etc. (se relevante)]
 
 **Smartphone (complete as seguintes informações):** <br/>
 
@@ -812,10 +841,23 @@ Se aplicável, adicione capturas de tela para ajudar a explicar o problema.
 - Sistema Operacional: [ex. iOS8.1]
 - Navegador [ex. navegador padrão, Safari]
 - Versão [ex. 22]
+- Rede:[Wi-Fi, 3G, 4G, etc. (se relevante)]
 
-**Contexto adicional** <br/>
 
-Adicione qualquer outro contexto sobre o problema aqui.
+### 5. Status do Bug
+
+- **Status Atual:**
+  - [ ] Novo
+  - [ ] Em Análise
+  - [ ] Em Progresso
+  - [ ] Resolvido
+  - [ ] Não Reproduzível
+  - [ ] Rejeitado
+
+- **Data de Resolução:** [Data em que o bug foi resolvido]
+- **Versão de Correção:** [Versão do sistema onde a correção foi aplicada]
+
+---
 
 ## 6 - Cronograma
 
