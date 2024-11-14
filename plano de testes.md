@@ -108,7 +108,7 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
    - Teste de instalação - Verificar se o sistema pode ser instalado e configurado corretamente;
    - Teste de Funcionalidade -Testar se cada funcionalidade cumpre o comportamento esperado;
    - Teste de Integração - Validar se os módulos e componentes interagem de forma correta.
-
+<br/>
 
 ### 3.1 - Teste de Interface de Usuário
 
@@ -768,15 +768,15 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
   
 ---
 
-Nome: Reporte de Defeitos <br/>
-
-Sobre: Crie um relatório para nos ajudar a melhora<br/>
-
-Título do Bug: ''<br/>
-
-Labels: ''<br/>
-
-Responsáveis: ''<br/>
+  Nome: Reporte de Defeitos <br/>
+  
+  Sobre: Crie um relatório para nos ajudar a melhora<br/>
+  
+  Título do Bug: ''<br/>
+  
+  Labels: ''<br/>
+  
+  Responsáveis: ''<br/>
 
 ---
 
@@ -793,55 +793,55 @@ Responsáveis: ''<br/>
 
 **Descrição Completa**<br/>
 
-[Descreva o problema de forma detalhada, incluindo o que está acontecendo e por que ele é considerado um problema.]
+  [Descreva o problema de forma detalhada, incluindo o que está acontecendo e por que ele é considerado um problema.]
 
 **Para Reproduzir**<br/>
 
-Passos para reproduzir o comportamento:
-
-1. Vá para '...'
-2. Clique em '....'
-3. Role até '....'
-4. Veja o erro
+  Passos para reproduzir o comportamento:
+  
+  1. Vá para '...'
+  2. Clique em '....'
+  3. Role até '....'
+  4. Veja o erro
 
 **Resultado Esperado**<br/>
 
-[Explique qual deveria ser o comportamento correto do sistema.]
+  [Explique qual deveria ser o comportamento correto do sistema.]
 
 **Resultado Atual**<br/>
 
-[Explique o comportamento atual observado no sistema.]
+  [Explique o comportamento atual observado no sistema.]
 
 ### 3. Anexos
 
 **Capturas de tela**<br/>
 
-[Link ou anexar imagem que mostra o problema, se aplicável]
+  [Link ou anexar imagem que mostra o problema, se aplicável]
 
 **Vídeos**<br/>
 
-[Link ou anexar vídeo que reproduz o problema, se aplicável]
+  [Link ou anexar vídeo que reproduz o problema, se aplicável]
 
 **Logs de Erro**
 
-[Logs ou mensagens de erro do sistema relacionados, se aplicável]
+  [Logs ou mensagens de erro do sistema relacionados, se aplicável]
 
 ### 4. Ambiente de Teste
 
 **Desktop (complete as seguintes informações):** <br/>
 
-- Sistema Operacional: [ex. iOS]
-- Navegador [ex. Chrome, Safari]
-- Versão [ex. 22]
-- Rede:[Wi-Fi, 3G, 4G, etc. (se relevante)]
+  - Sistema Operacional: [ex. iOS]
+  - Navegador [ex. Chrome, Safari]
+  - Versão [ex. 22]
+  - Rede:[Wi-Fi, 3G, 4G, etc. (se relevante)]
 
 **Smartphone (complete as seguintes informações):** <br/>
 
-- Dispositivo: [ex. iPhone6]
-- Sistema Operacional: [ex. iOS8.1]
-- Navegador [ex. navegador padrão, Safari]
-- Versão [ex. 22]
-- Rede:[Wi-Fi, 3G, 4G, etc. (se relevante)]
+  - Dispositivo: [ex. iPhone6]
+  - Sistema Operacional: [ex. iOS8.1]
+  - Navegador [ex. navegador padrão, Safari]
+  - Versão [ex. 22]
+  - Rede:[Wi-Fi, 3G, 4G, etc. (se relevante)]
 
 
 ### 5. Status do Bug
