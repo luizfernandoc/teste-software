@@ -2,9 +2,11 @@
 
 **E-commerce**
 
+
 *versão 1.0*
 
    *Autores: Gabriel Denti, Guilherme Jenner, Luiz Fernando e Rodolfo Pedro.*
+
 
 
 ## Histórico das alterações
@@ -12,6 +14,7 @@
    Data    | Versão |    Descrição   | Autor(a)
 -----------|--------|----------------|-----------------
 12/11/2024 |  1.0   | Release incial | Luiz Fernando Contarato
+
 
 
 ## 1 - Introdução
@@ -25,11 +28,14 @@
       - Identificar os recursos necessários e prover uma estimativa dos esforços de teste.
       - Listar os elementos resultantes do projeto de testes.
 
+
 ### 1.1 Propósito
 
    O objetivo deste Plano de Teste é definir as diretrizes, metodologias e recursos necessários para garantir que a aplicação de e-commerce atenda aos requisitos funcionais e não-funcionais especificados.
 
+
 ### 1.2 Escopo
+
 
 Este plano abrange o teste funcional e não-funcional das principais funcionalidades do site de e-commerce, incluindo:
 
@@ -39,6 +45,7 @@ Este plano abrange o teste funcional e não-funcional das principais funcionalid
    - Processo de checkout e pagamento
    - Persistência e segurança de dados dos clientes
 
+
 ## 2 - Requisitos a Testar
 
    Esta seção deve conter os casos de uso e requisitos não funcionais identificados como objetos dos testes ao longo do desenvolvimento do projeto.
@@ -46,6 +53,7 @@ Como, em geral, os requisitos a testar são obtidos diretamente dos requisitos d
 Dependendo das informações disponíveis, essa seção pode começar a ser preenchida já nas primeiras iterações do ciclo de vida a partir do documento de requisitos.
 
    Caso seja necessário, liste aqui os requisitos a testar subdivididos em casos de uso e requisitos não-funcionais.
+
 
 
 ### Casos de uso:
@@ -65,6 +73,7 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
 | id UC10                      | Atualização de Dados Cadastrais    |
 
 
+
 ### Requisitos não-funcionais:
 
 
@@ -82,6 +91,7 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
 | id RNF10                     | Resposta de consulta de estoque em até 1 segundo                   | id UC3, UC4, UC6                                                      |
 
 
+
 ## 3 - Tipos de teste
 
    Esta seção deve conter os tipos de testes escolhidos para cada iteração do projeto.
@@ -97,6 +107,7 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
    - Teste de instalação;
    - Teste de Funcionalidade;
    - Teste de Integração.
+
 
 ### 3.1 - Teste de Interface de Usuário 
 
@@ -164,6 +175,7 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
 <br/>
 
 
+
 ### 3.2 - Teste de Persistência de Dados
 
 <br/>
@@ -226,6 +238,8 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
 </table>
 <br/>
 
+
+
 ### 3.3 - Teste de Integração
 
 <table>
@@ -286,6 +300,7 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
     </tr>
 </table>
 <br/>
+
 
 
 ### 3.4 - Teste de Tempo de Resposta
@@ -351,6 +366,7 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
 <br/>
 
 
+
 ### 3.5 - Teste de Performance
 
 <table>
@@ -411,6 +427,7 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
     </tr>
 </table>
 <br/>
+
 
 
 ### 3.6 Teste de Funcionalidade
@@ -474,6 +491,8 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
 </table>
 <br/>
 
+
+
 ### 3.7 Teste de Instalação
 
 <table>
@@ -534,6 +553,8 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
     </tr>
 </table>
 <br/>
+
+
 
 ### 3.8 Teste de Segurança e Controle de Acesso
 
@@ -596,6 +617,8 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
 </table>
 <br/>
 
+
+
 ### 3.8 Teste de Stress
 
 <table>
@@ -657,6 +680,8 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
 </table>
 <br/>
 
+
+
 ### 3.9 Teste de Carga
 
 <table>
@@ -717,6 +742,7 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
     </tr>
 </table>
 <br/>
+
 
 
 ## 4 - Recursos
