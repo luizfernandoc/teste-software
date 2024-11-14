@@ -3,7 +3,9 @@
 **E-commerce**
 
 *versão 1.0*
+
    *Autores: Gabriel Denti, Guilherme Jenner, Luiz Fernando e Rodolfo Pedro.*
+
 
 ## Histórico das alterações
 
@@ -155,7 +157,7 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
             Responsável(is)
         </th>
         <th colspan="4">
-            Programador(es) ou equipe de testes
+            Rodolfo Pedro
         </th>
     </tr>
 </table>
