@@ -747,14 +747,19 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
 
 ### 4.1 - Ambiente de teste - Software e Hardware
 
-   Software: Sistema operacional Windows 10, Linux, navegadores Chrome e Firefox (últimas versões).
-   Hardware: Processador Intel i5 ou superior, 8GB de RAM, conexão à internet estável.
+   Software: Sistema operacional Windows 10, Linux, navegadores Chrome e Firefox (últimas versões).<br/>
+
+   Hardware: Processador Intel i5 ou superior, 8GB de RAM, conexão à internet estável.<br/>
+
 
 ### 4.2 - Ferramenta de teste
 
-   Selenium: Para automação dos testes de interface.
-   JMeter: Para testes de desempenho e carga.
-   OWASP ZAP: Para testes de segurança e verificação de vulnerabilidades.
+   Selenium: Para automação dos testes de interface.<br/>
+
+   JMeter: Para testes de desempenho e carga.<br/>
+
+   OWASP ZAP: Para testes de segurança e verificação de vulnerabilidades.<br/>
+
 
 ## 5 - Cronograma
 
