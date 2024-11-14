@@ -111,10 +111,6 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
 
 ### 3.1 - Teste de Interface de Usuário 
 
-   Para teste de funcionalidade.
-   Aqui deve-se verificar se cada classe retorna o esperado.
-   Se possível usar teste automatizado.
-
 <table>
     <tr>
         <th>
