@@ -763,6 +763,7 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
 
 ## 5.0 - Template de Reporte de Defeitos
 
+  Este template serve para facilitar o registro de bugs, garantindo que todas as informações essenciais estejam documentadas de forma clara. Use os campos abaixo para descrever o problema em detalhes:
 ---
 nome: Reporte de Defeitos <br/>
 
