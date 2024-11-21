@@ -991,9 +991,9 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 
 | Atividade           | Data de Início | Data de Término | Responsável       |
 |---------------------|----------------|-----------------|-------------------|
-| Teste de Interface  | 15/11/2024     | 20/11/2024      | Rodolfo Pedro     |
-| Teste de Integração | 21/11/2024     | 25/11/2024      | Guilherme Jenner  |
-| Teste de Segurança  | 26/11/2024     | 30/11/2024      | Luiz Fernando     |
+| Teste de Interface  | dd/mm/aaaa     | dd/mm/aaaa      | Gabriel Denti     |
+| Teste de Integração | dd/mm/aaaa     | dd/mm/aaaa      | Guilherme Jenner  |
+| Teste de Segurança  | dd/mm/aaaa     | dd/mm/aaaa      | Luiz Fernando     |
 
 
 ## 8. Critérios de Conclusão dos Testes
@@ -1008,7 +1008,7 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 Tipo de teste      | Duração | Data de Início | Data de Término
 -------------------|---------|----------------|-----------------
 Planejamento       |  2 dias | 12/11/2024     | 14/11/2024
-Projeto de Teste   |         | dd/mm/aaaa     | dd/mm/aaaa
+Projeto de Teste   |  4 dias | 18/11/2024     | 21/11/2024
 Implementação      |         | dd/mm/aaaa     | dd/mm/aaaa
 Execução de Testes |         | dd/mm/aaaa     | dd/mm/aaaa
 Avaliação          |         | dd/mm/aaaa     | dd/mm/aaaa
