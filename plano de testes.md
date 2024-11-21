@@ -739,6 +739,121 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
 </table>
 <br/>
 
+## Casos de teste
+
+### 1. Introdução
+
+Abaixo os cenários e casos de teste necessários para validar os requisitos funcionais e não funcionais do sistema de e-commerce. Cada requisito é associado a cenários específicos que serão testados para garantir que o sistema opere conforme o esperado.
+
+---
+
+### 2. Estrutura de Caso de Teste
+
+| Campo               | Descrição                                                              |
+|---------------------|------------------------------------------------------------------------|
+| **Requisito**       | O requisito do sistema que está sendo validado.                       |
+| **Cenário de Teste**| Uma descrição da situação que será validada.                          |
+| **ID do Caso**      | Identificador único do caso de teste.                                  |
+| **Objetivo**        | O objetivo do caso de teste.                                           |
+| **Passos**          | Passos para executar o caso de teste.                                  |
+| **Resultado Esperado** | O comportamento esperado do sistema após os passos serem executados.|
+
+---
+
+### 3. Requisitos e Casos de Teste
+
+#### 3.1 Requisito Funcional 1 (RF1): Cadastro de Cliente
+
+##### Cenário 1: Cadastro com informações válidas
+
+| Campo               | Descrição                                                              |
+|---------------------|------------------------------------------------------------------------|
+| **Requisito**       | RF1                                                                   |
+| **Cenário de Teste**| O usuário realiza um cadastro com informações válidas.                 |
+| **ID do Caso**      | CT-RF1-001                                                            |
+| **Objetivo**        | Validar que o sistema aceita cadastros com dados corretos.             |
+| **Passos**          | 1. Acessar a página de cadastro.<br>2. Preencher nome, e-mail e senha válidos.<br>3. Confirmar o cadastro. |
+| **Resultado Esperado** | O sistema exibe uma mensagem de sucesso e registra o cliente.      |
+
+##### Cenário 2: Cadastro com informações inválidas
+
+| Campo               | Descrição                                                              |
+|---------------------|------------------------------------------------------------------------|
+| **Requisito**       | RF1                                                                   |
+| **Cenário de Teste**| O usuário tenta cadastrar com informações inválidas (e-mail mal formatado, campos obrigatórios em branco). |
+| **ID do Caso**      | CT-RF1-002                                                            |
+| **Objetivo**        | Validar que o sistema exibe mensagens de erro apropriadas para dados inválidos. |
+| **Passos**          | 1. Acessar a página de cadastro.<br>2. Preencher dados inválidos.<br>3. Confirmar o cadastro. |
+| **Resultado Esperado** | O sistema exibe mensagens de erro indicando os campos com problemas. |
+
+---
+
+#### 3.2 Requisito Funcional 2 (RF2): Login de Cliente
+
+##### Cenário 1: Login com credenciais válidas
+
+| Campo               | Descrição                                                              |
+|---------------------|------------------------------------------------------------------------|
+| **Requisito**       | RF2                                                                   |
+| **Cenário de Teste**| O cliente realiza login com e-mail e senha corretos.                   |
+| **ID do Caso**      | CT-RF2-001                                                            |
+| **Objetivo**        | Validar que o sistema permite o acesso com credenciais válidas.        |
+| **Passos**          | 1. Acessar a página de login.<br>2. Inserir e-mail e senha válidos.<br>3. Confirmar o login. |
+| **Resultado Esperado** | O sistema redireciona o cliente para a página inicial logado.       |
+
+##### Cenário 2: Login com credenciais inválidas
+
+| Campo               | Descrição                                                              |
+|---------------------|------------------------------------------------------------------------|
+| **Requisito**       | RF2                                                                   |
+| **Cenário de Teste**| O cliente tenta realizar login com e-mail ou senha incorretos.         |
+| **ID do Caso**      | CT-RF2-002                                                            |
+| **Objetivo**        | Validar que o sistema exibe mensagem de erro para credenciais inválidas.|
+| **Passos**          | 1. Acessar a página de login.<br>2. Inserir e-mail ou senha incorretos.<br>3. Confirmar o login. |
+| **Resultado Esperado** | O sistema exibe mensagem de erro indicando falha no login.         |
+
+---
+
+#### 3.3 Requisito Funcional 3 (RF3): Adicionar Produto ao Carrinho
+
+##### Cenário 1: Adicionar produto disponível
+
+| Campo               | Descrição                                                              |
+|---------------------|------------------------------------------------------------------------|
+| **Requisito**       | RF3                                                                   |
+| **Cenário de Teste**| O cliente adiciona um produto disponível ao carrinho.                  |
+| **ID do Caso**      | CT-RF3-001                                                            |
+| **Objetivo**        | Validar que o produto é adicionado corretamente ao carrinho.           |
+| **Passos**          | 1. Navegar até a página de produto.<br>2. Selecionar um produto.<br>3. Clicar em "Adicionar ao Carrinho". |
+| **Resultado Esperado** | O produto é exibido no carrinho com a quantidade e preço corretos.  |
+
+##### Cenário 2: Adicionar produto indisponível
+
+| Campo               | Descrição                                                              |
+|---------------------|------------------------------------------------------------------------|
+| **Requisito**       | RF3                                                                   |
+| **Cenário de Teste**| O cliente tenta adicionar ao carrinho um produto fora de estoque.      |
+| **ID do Caso**      | CT-RF3-002                                                            |
+| **Objetivo**        | Validar que o sistema exibe mensagem de erro para produtos indisponíveis. |
+| **Passos**          | 1. Navegar até a página de produto.<br>2. Selecionar um produto fora de estoque.<br>3. Clicar em "Adicionar ao Carrinho". |
+| **Resultado Esperado** | O sistema exibe mensagem indicando a indisponibilidade do produto.  |
+
+---
+
+#### 3.4 Requisito Não Funcional 1 (RNF1): Tempo de Resposta
+
+##### Cenário 1: Tempo de carregamento das páginas
+
+| Campo               | Descrição                                                              |
+|---------------------|------------------------------------------------------------------------|
+| **Requisito**       | RNF1                                                                  |
+| **Cenário de Teste**| Medir o tempo de carregamento das páginas principais.                  |
+| **ID do Caso**      | CT-RNF1-001                                                           |
+| **Objetivo**        | Garantir que o tempo de carregamento seja inferior a 2 segundos.       |
+| **Passos**          | 1. Acessar a página inicial.<br>2. Navegar para diferentes seções.<br>3. Medir o tempo de carregamento. |
+| **Resultado Esperado** | Todas as páginas carregam em até 2 segundos.                        |
+
+---
 
 ## 4 - Recursos
    
