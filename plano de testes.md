@@ -739,15 +739,15 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
 </table>
 <br/>
 
-## Casos de teste
+## 4. Casos de teste
 
-### 1. Introdução
+### 4.1 Introdução
 
 Abaixo os cenários e casos de teste necessários para validar os requisitos funcionais e não funcionais do sistema de e-commerce. Cada requisito é associado a cenários específicos que serão testados para garantir que o sistema opere conforme o esperado.
 
 ---
 
-### 2. Estrutura de Caso de Teste
+### 4.2 Estrutura de Caso de Teste
 
 | Campo               | Descrição                                                              |
 |---------------------|------------------------------------------------------------------------|
@@ -760,9 +760,9 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 
 ---
 
-### 3. Requisitos e Casos de Teste
+### 4.3 Requisitos e Casos de Teste
 
-#### 3.1 Requisito Funcional 1 (RF1): Cadastro de Cliente
+#### 4.3.1 Requisito Funcional 1 (RF1): Cadastro de Cliente
 
 ##### Cenário 1: Cadastro com informações válidas
 
@@ -788,7 +788,7 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 
 ---
 
-#### 3.2 Requisito Funcional 2 (RF2): Login de Cliente
+#### 4.3.2 Requisito Funcional 2 (RF2): Login de Cliente
 
 ##### Cenário 1: Login com credenciais válidas
 
@@ -814,7 +814,7 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 
 ---
 
-#### 3.3 Requisito Funcional 3 (RF3): Adicionar Produto ao Carrinho
+#### 4.3.3 Requisito Funcional 3 (RF3): Adicionar Produto ao Carrinho
 
 ##### Cenário 1: Adicionar produto disponível
 
@@ -840,7 +840,7 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 
 ---
 
-#### 3.4 Requisito Não Funcional 1 (RNF1): Tempo de Resposta
+#### 4.3.4 Requisito Não Funcional 1 (RNF1): Tempo de Resposta
 
 ##### Cenário 1: Tempo de carregamento das páginas
 
@@ -855,11 +855,11 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 
 ---
 
-## 4 - Recursos
+## 5 - Recursos
    
    Esta seção deve descrever os recursos humanos, de ambiente de teste (hardware e software) e de ferramentas de automatização de testes necessários para execução dos testes que devem ser descritos nas subseções que seguem.
 
-### 4.1 - Ambiente de teste - Software e Hardware
+### 5.1 - Ambiente de teste - Software e Hardware
 
    Software: Sistema operacional Windows 10, Linux, navegadores Chrome e Firefox (últimas versões).<br/>
 
@@ -868,7 +868,7 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
    Rede: Simulação de diferentes condições de rede (Wi-Fi, 3G, 4G) para avaliar a experiência em cenários reais.<br/>
 
 
-### 4.2 - Ferramenta de teste
+### 5.2 - Ferramenta de teste
 
    Selenium: Para automação dos testes de interface.<br/>
 
@@ -877,7 +877,7 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
    OWASP ZAP: Para testes de segurança e verificação de vulnerabilidades.<br/>
 
 
-## 5.0 - Template de Reporte de Defeitos
+## 6.0 - Template de Reporte de Defeitos
 
   Este template serve para facilitar o registro de bugs, garantindo que todas as informações essenciais estejam documentadas de forma clara. Use os campos abaixo para descrever o problema em detalhes:
   
@@ -895,7 +895,7 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 
 ---
 
-### 5.1 Informações Básicas
+### 6.1 Informações Básicas
 
 - **Data do Relato:** [Data em que o bug foi reportado]
 - **Relatado por:** [Nome do responsável por relatar o bug]
@@ -904,7 +904,7 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 - **Severidade:** [Crítica, Alta, Média, Baixa]
 
 
-### 5.2 Descrição do Bug
+### 6.2 Descrição do Bug
 
 **Descrição Completa**<br/>
 
@@ -927,7 +927,7 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 
   [Explique o comportamento atual observado no sistema.]
 
-### 5.3 Anexos
+### 6.3 Anexos
 
 **Capturas de tela**<br/>
 
@@ -941,7 +941,7 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 
   [Logs ou mensagens de erro do sistema relacionados, se aplicável]
 
-### 5.4 Ambiente de Teste
+### 6.4 Ambiente de Teste
 
 **Desktop (complete as seguintes informações):** <br/>
 
@@ -959,7 +959,7 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
   - Rede:[Wi-Fi, 3G, 4G, etc. (se relevante)]
 
 
-### 5.6 Status do Bug
+### 6.6 Status do Bug
 
 - **Status Atual:**
   - [ ] Novo
@@ -975,7 +975,7 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 ---
 
 
-## 6. Critérios de Sucesso e Falha dos Testes
+## 7. Critérios de Sucesso e Falha dos Testes
 
 - **Critério de Sucesso**: O teste será considerado bem-sucedido se:<br/>
   - O tempo de resposta for inferior a 2 segundos para páginas principais.
@@ -987,7 +987,7 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
   - Não conformidade com requisitos essenciais de segurança de dados.
 
  
-## 7. Cronograma de Testes
+## 8. Cronograma de Testes
 
 | Atividade           | Data de Início | Data de Término | Responsável       |
 |---------------------|----------------|-----------------|-------------------|
@@ -996,14 +996,14 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 | Teste de Segurança  | dd/mm/aaaa     | dd/mm/aaaa      | Luiz Fernando     |
 
 
-## 8. Critérios de Conclusão dos Testes
+## 9. Critérios de Conclusão dos Testes
 
 - **Critério de Conclusão**: O teste será considerado completo se:
   - 100% dos casos de uso e requisitos críticos forem testados e aprovados.
   - Nenhum erro de alta prioridade permanecer pendente.
 
 
-## 9 - Cronograma
+## 10 - Cronograma
 
 Tipo de teste      | Duração | Data de Início | Data de Término
 -------------------|---------|----------------|-----------------
