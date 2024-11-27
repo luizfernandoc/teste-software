@@ -827,17 +827,6 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 | **Passos**          | 1. Navegar até a página de produto.<br>2. Selecionar um produto.<br>3. Clicar em "Adicionar ao Carrinho". |
 | **Resultado Esperado** | O produto é exibido no carrinho com a quantidade e preço corretos.  |
 
-##### Cenário 2: Adicionar produto indisponível
-
-| Campo               | Descrição                                                              |
-|---------------------|------------------------------------------------------------------------|
-| **Requisito**       | RF3                                                                   |
-| **Cenário de Teste**| O cliente tenta adicionar ao carrinho um produto fora de estoque.      |
-| **ID do Caso**      | CT-RF3-002                                                            |
-| **Objetivo**        | Validar que o sistema exibe mensagem de erro para produtos indisponíveis. |
-| **Passos**          | 1. Navegar até a página de produto.<br>2. Selecionar um produto fora de estoque.<br>3. Clicar em "Adicionar ao Carrinho". |
-| **Resultado Esperado** | O sistema exibe mensagem indicando a indisponibilidade do produto.  |
-
 ---
 
 #### 4.3.4 Requisito Não Funcional 1 (RNF1): Tempo de Resposta
@@ -854,6 +843,45 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 | **Resultado Esperado** | Todas as páginas carregam em até 2 segundos.                        |
 
 ---
+
+### 4.3.5 Requisito Funcional 4 (RF4): Finalizar Compra
+
+##### Cenário 1: Finalizar compra com produtos disponíveis
+
+| Campo               | Descrição                                                              |
+|---------------------|------------------------------------------------------------------------|
+| **Requisito**       | RF4                                                                   |
+| **Cenário de Teste**| O cliente finaliza a compra com todos os produtos disponíveis no carrinho. |
+| **ID do Caso**      | CT-RF4-001                                                            |
+| **Objetivo**        | Validar que o sistema processa corretamente a finalização do pedido quando os produtos estão disponíveis. |
+| **Passos**          | 1. Adicionar produtos ao carrinho.<br>2. Ir para a página de checkout.<br>3. Preencher as informações obrigatórias (endereço e método de pagamento).<br>4. Confirmar a compra. |
+| **Resultado Esperado** | O sistema gera um número de pedido, exibe mensagem de sucesso e atualiza o estoque. |
+
+---
+
+### 4.3.6 Requisito Funcional 5 (RF5): Pagamento
+
+##### Cenário 1: Pagamento com cartão de crédito válido
+
+| Campo               | Descrição                                                              |
+|---------------------|------------------------------------------------------------------------|
+| **Requisito**       | RF5                                                                   |
+| **Cenário de Teste**| O cliente realiza o pagamento com um cartão de crédito válido.         |
+| **ID do Caso**      | CT-RF5-001                                                            |
+| **Objetivo**        | Validar que o sistema processa corretamente o pagamento com um cartão válido. |
+| **Passos**          | 1. Ir para a página de checkout.<br>2. Selecionar pagamento por cartão de crédito.<br>3. Inserir informações válidas do cartão (número, validade, CVV).<br>4. Confirmar o pagamento. |
+| **Resultado Esperado** | O sistema aprova o pagamento, exibe mensagem de sucesso e gera o pedido. |
+
+##### Cenário 2: Pagamento recusado por cartão inválido
+
+| Campo               | Descrição                                                              |
+|---------------------|------------------------------------------------------------------------|
+| **Requisito**       | RF5                                                                   |
+| **Cenário de Teste**| O cliente tenta realizar pagamento com um cartão inválido.             |
+| **ID do Caso**      | CT-RF5-002                                                            |
+| **Objetivo**        | Validar que o sistema rejeita o pagamento e exibe mensagem apropriada para cartões inválidos. |
+| **Passos**          | 1. Ir para a página de checkout.<br>2. Selecionar pagamento por cartão de crédito.<br>3. Inserir informações inválidas do cartão (número incorreto ou expirado).<br>4. Confirmar o pagamento. |
+| **Resultado Esperado** | O sistema exibe mensagem de erro indicando que o pagamento foi recusado e permite ao cliente tentar novamente. |
 
 ## 5 - Recursos
    
