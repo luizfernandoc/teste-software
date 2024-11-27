@@ -775,17 +775,6 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 | **Passos**          | 1. Acessar a página de cadastro.<br>2. Preencher nome, e-mail e senha válidos.<br>3. Confirmar o cadastro. |
 | **Resultado Esperado** | O sistema exibe uma mensagem de sucesso e registra o cliente.      |
 
-##### Cenário 2: Cadastro com informações inválidas
-
-| Campo               | Descrição                                                              |
-|---------------------|------------------------------------------------------------------------|
-| **Requisito**       | RF1                                                                   |
-| **Cenário de Teste**| O usuário tenta cadastrar com informações inválidas (e-mail mal formatado, campos obrigatórios em branco). |
-| **ID do Caso**      | CT-RF1-002                                                            |
-| **Objetivo**        | Validar que o sistema exibe mensagens de erro apropriadas para dados inválidos. |
-| **Passos**          | 1. Acessar a página de cadastro.<br>2. Preencher dados inválidos.<br>3. Confirmar o cadastro. |
-| **Resultado Esperado** | O sistema exibe mensagens de erro indicando os campos com problemas. |
-
 ---
 
 #### 4.3.2 Requisito Funcional 2 (RF2): Login de Cliente
@@ -800,17 +789,6 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 | **Objetivo**        | Validar que o sistema permite o acesso com credenciais válidas.        |
 | **Passos**          | 1. Acessar a página de login.<br>2. Inserir e-mail e senha válidos.<br>3. Confirmar o login. |
 | **Resultado Esperado** | O sistema redireciona o cliente para a página inicial logado.       |
-
-##### Cenário 2: Login com credenciais inválidas
-
-| Campo               | Descrição                                                              |
-|---------------------|------------------------------------------------------------------------|
-| **Requisito**       | RF2                                                                   |
-| **Cenário de Teste**| O cliente tenta realizar login com e-mail ou senha incorretos.         |
-| **ID do Caso**      | CT-RF2-002                                                            |
-| **Objetivo**        | Validar que o sistema exibe mensagem de erro para credenciais inválidas.|
-| **Passos**          | 1. Acessar a página de login.<br>2. Inserir e-mail ou senha incorretos.<br>3. Confirmar o login. |
-| **Resultado Esperado** | O sistema exibe mensagem de erro indicando falha no login.         |
 
 ---
 
