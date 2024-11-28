@@ -1,6 +1,6 @@
 # Plano de Teste - IEEE 829
 
-**Nome do Sistema**: E-commerce
+**Nome do Sistema**: AutomationExercise(E-commerce)
 
 **Link do site**: https://www.automationexercise.com/
 
