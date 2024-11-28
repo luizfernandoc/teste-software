@@ -948,22 +948,18 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 
 ---
 
-#### Cenário 1: Bug Report
+## Cenário 1: Bug Report
 
-#### Reporte de Defeitos
+### Redirecionamento incorreto após logout
 
-### Título do Bug
-Redirecionamento incorreto após logout
+### Logout, Redirecionamento, RF5
 
-### Labels
-Logout, Redirecionamento, RF5
 
-### Responsáveis
-Gabriel Denti
+### Gabriel Denti
 
 ---
 
-## 7.1 Informações Básicas
+## Informações Básicas
 
 - **Data do Relato:** 28/11/2024  
 - **Relatado por:** Luiz Fernando Contarato Moura  
@@ -973,7 +969,7 @@ Gabriel Denti
 
 ---
 
-## 7.2 Descrição do Bug
+## Descrição do Bug
 
 **Descrição Completa**  
 O sistema realiza o logout do cliente autenticado com sucesso, mas redireciona incorretamente o usuário para a página de "Login/Criar Conta" em vez da página inicial conforme esperado.  
@@ -992,7 +988,7 @@ O cliente é deslogado corretamente, mas redirecionado para a página de "Login/
 
 ---
 
-## 7.3 Anexos
+## Anexos
 
 - **Capturas de Tela**  
 [Insira aqui links ou imagens que evidenciem o comportamento do sistema durante o bug]  
@@ -1005,7 +1001,7 @@ O cliente é deslogado corretamente, mas redirecionado para a página de "Login/
 
 ---
 
-## 7.4 Ambiente de Teste
+## Ambiente de Teste
 
 ### Desktop  
 - **Sistema Operacional:** Windows 11  
@@ -1022,7 +1018,7 @@ O cliente é deslogado corretamente, mas redirecionado para a página de "Login/
 
 ---
 
-## 7.6 Status do Bug
+## Status do Bug
 
 - **Status Atual:**  
   - [x] Novo  
