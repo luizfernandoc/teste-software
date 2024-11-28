@@ -950,12 +950,14 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 
 ## Cenário 1: Bug Report
 
-### Redirecionamento incorreto após logout
+#### Título do Bug
+Redirecionamento incorreto após logout
 
-### Logout, Redirecionamento, RF5
+#### Labels
+Logout, Redirecionamento, RF5
 
-
-### Gabriel Denti
+#### Responsáveis
+Gabriel Denti
 
 ---
 
