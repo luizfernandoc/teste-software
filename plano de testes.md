@@ -952,8 +952,6 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 
 # Reporte de Defeitos
 
----
-
 ### Título do Bug
 Redirecionamento incorreto após logout
 
@@ -961,17 +959,17 @@ Redirecionamento incorreto após logout
 Logout, Redirecionamento, RF5
 
 ### Responsáveis
-[Definir responsável pelo acompanhamento e correção]
+Gabriel Denti
 
 ---
 
 ## 7.1 Informações Básicas
 
 - **Data do Relato:** 28/11/2024  
-- **Relatado por:** [Seu Nome]  
-- **Versão do Sistema:** [Informar a versão utilizada no momento do teste]  
-- **Prioridade:** Média  
-- **Severidade:** Média  
+- **Relatado por:** Luiz Fernando Contarato Moura  
+- **Versão do Sistema:** 1.0.5
+- **Prioridade:** Baixa  
+- **Severidade:** Baixa  
 
 ---
 
