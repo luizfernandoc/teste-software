@@ -948,86 +948,6 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 
 ---
 
-## Cenário 1: Bug Report
-
-#### Título do Bug
-Redirecionamento incorreto após logout
-
-#### Labels
-Logout, Redirecionamento, RF5
-
-#### Responsáveis
-Gabriel Denti
-
----
-
-## Informações Básicas
-
-- **Data do Relato:** 28/11/2024  
-- **Relatado por:** Luiz Fernando Contarato Moura  
-- **Versão do Sistema:** 1.0.5
-- **Prioridade:** Baixa  
-- **Severidade:** Baixa  
-
----
-
-## Descrição do Bug
-
-**Descrição Completa**  
-O sistema realiza o logout do cliente autenticado com sucesso, mas redireciona incorretamente o usuário para a página de "Login/Criar Conta" em vez da página inicial conforme esperado.  
-
-**Para Reproduzir**  
-Passos para reproduzir o comportamento:  
-1. Acesse o site: `https://www.automationexercise.com`.  
-2. Faça login utilizando e-mail e senha válidos.  
-3. Após estar autenticado, clique no botão "Logout" disponível no menu ou na página do cliente.  
-
-**Resultado Esperado**  
-O cliente deve ser deslogado com sucesso e redirecionado para a página inicial do sistema.  
-
-**Resultado Atual**  
-O cliente é deslogado corretamente, mas redirecionado para a página de "Login/Criar Conta".  
-
----
-
-## Ambiente de Teste
-
-### Desktop  
-- **Sistema Operacional:** Windows 11  
-- **Navegador:** Google Chrome  
-- **Versão do Navegador:** 119.0  
-- **Rede:** Wi-Fi  
-
-### Smartphone  
-- **Dispositivo:** Samsung Galaxy S22  
-- **Sistema Operacional:** Android 13  
-- **Navegador:** Chrome para Android  
-- **Versão do Navegador:** 119.0  
-- **Rede:** Wi-Fi  
-
----
-
-## Status do Bug
-
-- **Status Atual:**  
-  - [x] Novo  
-  - [ ] Em Análise  
-  - [ ] Em Progresso  
-  - [ ] Resolvido  
-  - [ ] Não Reproduzível  
-  - [ ] Rejeitado  
-
-- **Data de Resolução:** [A ser definido]  
-- **Versão de Correção:** [A ser informado após correção]  
-
----
-
-### Observações Adicionais
-
-O problema pode estar relacionado ao fluxo de redirecionamento configurado no sistema após a ação de logout. Verificar as rotas ou lógica de controle para garantir que o destino seja a página inicial.
-
----
-
 ##### Cenário 2: Acessar funcionalidades restrita para usuários autenticados
 
 | Campo               | Descrição                                                              |
@@ -1212,6 +1132,177 @@ O problema pode estar relacionado ao fluxo de redirecionamento configurado no si
 - **Versão de Correção:** [Versão do sistema onde a correção foi aplicada]
 
 ---
+
+## Bug Report - Logout de Cliente
+
+#### Título do Bug
+Redirecionamento incorreto após logout
+
+#### Labels
+Logout, Redirecionamento, RF5
+
+#### Responsáveis
+Gabriel Denti
+
+---
+
+## Informações Básicas
+
+- **Data do Relato:** 25/11/2024  
+- **Relatado por:** Luiz Fernando Contarato Moura  
+- **Versão do Sistema:** 1.0.5
+- **Prioridade:** Baixa  
+- **Severidade:** Baixa  
+
+---
+
+## Descrição do Bug
+
+**Descrição Completa**  
+O sistema realiza o logout do cliente autenticado com sucesso, mas redireciona incorretamente o usuário para a página de "Login/Criar Conta" em vez da página inicial conforme esperado.  
+
+**Para Reproduzir**  
+Passos para reproduzir o comportamento:  
+1. Acesse o site: `https://www.automationexercise.com`.  
+2. Faça login utilizando e-mail e senha válidos.  
+3. Após estar autenticado, clique no botão "Logout" disponível no menu ou na página do cliente.  
+
+**Resultado Esperado**  
+O cliente deve ser deslogado com sucesso e redirecionado para a página inicial do sistema.  
+
+**Resultado Atual**  
+O cliente é deslogado corretamente, mas redirecionado para a página de "Login/Criar Conta".  
+
+---
+
+## Ambiente de Teste
+
+### Desktop  
+- **Sistema Operacional:** Windows 11  
+- **Navegador:** Google Chrome  
+- **Versão do Navegador:** v131  
+- **Rede:** Wi-Fi  
+
+### Smartphone  
+- **Dispositivo:** Samsung Galaxy S22  
+- **Sistema Operacional:** Android 13  
+- **Navegador:** Chrome para Android  
+- **Versão do Navegador:** v131  
+- **Rede:** Wi-Fi  
+
+---
+
+## Status do Bug
+
+- **Status Atual:**  
+  - [x] Novo  
+  - [ ] Em Análise  
+  - [ ] Em Progresso  
+  - [ ] Resolvido  
+  - [ ] Não Reproduzível  
+  - [ ] Rejeitado  
+
+- **Data de Resolução:** [A ser definido]  
+- **Versão de Correção:** [A ser informado após correção]
+
+### Observações Adicionais
+
+O problema pode estar relacionado ao fluxo de redirecionamento configurado no sistema após a ação de logout. Verificar as rotas ou lógica de controle para garantir que o destino seja a página inicial.
+
+---
+
+## Bug Report - Pagamento com cartão de crédito
+
+
+#### Título do Bug: 
+O sistema permite pagamento com informações inválidas de cartão.
+
+#### Labels: Pagamento, Validação, Criticidade Alta.
+
+####Responsáveis:
+Luiz Fernando
+
+---
+
+## **Informações Básicas**
+
+- **Data do Relato:** 25/11/2024
+- **Relatado por:** Gabriel Denti
+- **Versão do Sistema:** 1.0.5
+- **Prioridade:** Alta
+- **Severidade:** Crítica
+
+---
+
+## **Descrição do Bug**
+
+### **Descrição Completa**
+O sistema não validou adequadamente as informações do cartão de crédito durante o pagamento. Apesar de os dados fornecidos serem inválidos (cartão expirado ou número incorreto), o sistema concluiu a transação, sem exibir a mensagem de erro esperada: _"Your payment was declined, credit card invalid!"_.
+
+### **Para Reproduzir**
+Passos para reproduzir o comportamento:
+1. Vá para a página de checkout.
+2. Selecione a opção de pagamento por cartão de crédito.
+3. Insira informações inválidas do cartão (número incorreto ou cartão expirado).
+4. Confirme o pagamento.
+
+### **Resultado Esperado**
+O sistema deveria rejeitar o pagamento e exibir a mensagem de erro:
+_"Your payment was declined, credit card invalid!"_.
+
+### **Resultado Atual**
+O pagamento foi concluído com sucesso, mesmo com informações inválidas, sem exibir a mensagem esperada.
+
+---
+
+## **Anexos**
+
+- **Capturas de tela:**  
+  *(Insira aqui links ou imagens mostrando o problema, caso existam)*.
+
+- **Vídeos:**  
+  *(Insira aqui links ou vídeos que demonstram o comportamento inesperado, se possível)*.
+
+- **Logs de Erro:**
+   
+  *assert expected subject to be visible*.
+  
+  *cy.contains('Your payment was declined, credit card invalid!').should('be.visible');*
+
+---
+
+## **Ambiente de Teste**
+
+### Desktop
+- **Sistema Operacional:** Windows 10
+- **Navegador:** Google Chrome
+- **Versão:** v131
+- **Rede:** Wi-Fi
+
+### Smartphone  
+- **Dispositivo:** Samsung Galaxy S22  
+- **Sistema Operacional:** Android 13  
+- **Navegador:** Chrome para Android  
+- **Versão do Navegador:** v131 
+- **Rede:** Wi-Fi  
+
+---
+
+## **Status do Bug**
+
+- **Status Atual:**
+  - [x] Novo
+  - [ ] Em Análise
+  - [ ] Em Progresso
+  - [ ] Resolvido
+  - [ ] Não Reproduzível
+  - [ ] Rejeitado
+
+- **Data de Resolução:** *(A ser preenchido pela equipe de desenvolvimento)*.
+- **Versão de Correção:** *(A ser preenchido após a correção)*.
+
+---
+
 ## 8. Critérios de Conclusão dos Testes
 
 - **Critério de Conclusão**: O teste será considerado completo se:
@@ -1233,6 +1324,7 @@ Tipo de teste      | Duração | Data de Início | Data de Término
 -------------------|---------|----------------|-----------------
 Planejamento       |  2 dias | 12/11/2024     | 14/11/2024
 Projeto de Teste   |  4 dias | 18/11/2024     | 21/11/2024
-Implementação      |         | dd/mm/aaaa     | dd/mm/aaaa
-Execução de Testes |         | dd/mm/aaaa     | dd/mm/aaaa
-Avaliação          |         | dd/mm/aaaa     | dd/mm/aaaa
+Implementação      |  3 dias | 21/11/2024     | 24/11/2024
+Execução de Testes |  2 dias | 25/11/2024     | 27/11/2024
+Avaliação          |  1 dia  | 28/11/2024     | 28/11/2024
+
