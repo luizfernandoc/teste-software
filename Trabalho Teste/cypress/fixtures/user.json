@@ -1,0 +1,25 @@
+{
+  "validLoginUser": {
+    "name": "Usuario Valido Teste",
+    "email": "usuarioValido@teste.com",
+    "password": "senhaCerta123"
+  },
+  "validSignUpUser": {
+    "name": "Usuario Novo Teste",
+    "email": "usuarioNovo@teste.com",
+    "password": "senhaNovo123",
+    "birthDay": "10",
+    "birthMonth": "May",
+    "birthYear": "1990",
+    "firstName": "Usuario",
+    "lastName": "Novo",
+    "company": "Empresa Exemplo",
+    "address1": "Rua Exemplo, 123",
+    "address2": "Apto 456",
+    "country": "Canada",
+    "state": "Ontario",
+    "city": "Toronto",
+    "zipcode": "A1B 2C3",
+    "mobileNumber": "1234567890"
+  }
+}

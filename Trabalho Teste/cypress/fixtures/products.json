@@ -1,0 +1,13 @@
+{
+    "product1": {
+      "name": "Blue Top",
+      "category": "Women > Tops",
+      "quantity": 1
+    },
+    "product2": {
+      "name": "Men Tshirt",
+      "category": "Men > T-Shirts",
+      "quantity": 2
+    }
+}
+  
