@@ -816,7 +816,7 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 |---------------------|------------------------------------------------------------------------|
 | **Requisito**       | RF4                                                                   |
 | **Cenário de Teste**| O cliente realiza o pagamento com um cartão de crédito válido.         |
-| **ID do Caso**      | CT-RF5-001                                                            |
+| **ID do Caso**      | CT-RF4-001                                                            |
 | **Objetivo**        | Validar que o sistema processa corretamente o pagamento com um cartão válido. |
 | **Passos**          | 1. Ir para a página de checkout.<br>2. Selecionar pagamento por cartão de crédito.<br>3. Inserir informações válidas do cartão (número, validade, CVV).<br>4. Confirmar o pagamento. |
 | **Resultado Esperado** | O sistema aprova o pagamento, exibe mensagem de sucesso e gera o pedido. |
@@ -829,7 +829,7 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 |---------------------|------------------------------------------------------------------------|
 | **Requisito**       | RF4                                                                  |
 | **Cenário de Teste**| O cliente tenta realizar pagamento com um cartão inválido.             |
-| **ID do Caso**      | CT-RF5-002                                                            |
+| **ID do Caso**      | CT-RF4-002                                                            |
 | **Objetivo**        | Validar que o sistema rejeita o pagamento e exibe mensagem apropriada para cartões inválidos. |
 | **Passos**          | 1. Ir para a página de checkout.<br>2. Selecionar pagamento por cartão de crédito.<br>3. Inserir informações inválidas do cartão (número incorreto ou expirado).<br>4. Confirmar o pagamento. |
 | **Resultado Esperado** | O sistema exibe mensagem de erro indicando que o pagamento foi recusado e permite ao cliente tentar novamente. |
