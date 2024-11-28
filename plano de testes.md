@@ -64,7 +64,7 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
 | id UC7                       | Gestão de Endereços de Entrega     |
 | id UC8                       | Aplicação de Cupons de Desconto    |
 | id UC9                       | Avaliação e Feedback de Produtos   |
-| id UC10                      | Atualização de Dados Cadastrais    |
+| id UC10                      | Entrar em Contato (Contact Us)     |
 
 <br/>
 
@@ -474,7 +474,7 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
             Responsável(is)
         </th>
         <th colspan="4">
-            Gabriel Denti
+            Todos os membros do grupo
         </th>
     </tr>
 </table>
@@ -808,24 +808,7 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 
 ---
 
-### 4.3.4 Requisito Funcional 4 (RF4): Finalizar Compra
-
-##### Cenário 1: Finalizar compra com produtos disponíveis
-
-| Campo               | Descrição                                                              |
-|---------------------|------------------------------------------------------------------------|
-| **Requisito**       | RF4                                                                   |
-| **Cenário de Teste**| O cliente finaliza a compra com todos os produtos disponíveis no carrinho. |
-| **ID do Caso**      | CT-RF4-001                                                            |
-| **Objetivo**        | Validar que o sistema processa corretamente a finalização do pedido quando os produtos estão disponíveis. |
-| **Passos**          | 1. Adicionar produtos ao carrinho.<br>2. Ir para a página de checkout.<br>3. Preencher as informações obrigatórias (endereço e método de pagamento).<br>4. Confirmar a compra. |
-| **Resultado Esperado** | O sistema gera um número de pedido, exibe mensagem de sucesso e atualiza o estoque. |
-| **Status**          | O status do caso de teste (Passou/Falhou).                             |
-| **Evidências/Observações** | Screenshots, logs ou qualquer comentário adicional relacionado ao teste. |
-
----
-
-### 4.3.5 Requisito Funcional 5 (RF5): Pagamento
+### 4.3.5 Requisito Funcional 5 (RF4): Pagamento
 
 ##### Cenário 1: Pagamento com cartão de crédito válido
 
@@ -837,8 +820,8 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 | **Objetivo**        | Validar que o sistema processa corretamente o pagamento com um cartão válido. |
 | **Passos**          | 1. Ir para a página de checkout.<br>2. Selecionar pagamento por cartão de crédito.<br>3. Inserir informações válidas do cartão (número, validade, CVV).<br>4. Confirmar o pagamento. |
 | **Resultado Esperado** | O sistema aprova o pagamento, exibe mensagem de sucesso e gera o pedido. |
-| **Status**          | O status do caso de teste (Passou/Falhou).                             |
-| **Evidências/Observações** | Screenshots, logs ou qualquer comentário adicional relacionado ao teste. |
+| **Status**          | Passou                             |
+| **Evidências/Observações** | Ápos concluir o pagamento a mensagem: "Congratulations! Your order has been confirmed!" apareceu! |
 
 ##### Cenário 2: Pagamento recusado por cartão inválido
 
@@ -850,8 +833,8 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 | **Objetivo**        | Validar que o sistema rejeita o pagamento e exibe mensagem apropriada para cartões inválidos. |
 | **Passos**          | 1. Ir para a página de checkout.<br>2. Selecionar pagamento por cartão de crédito.<br>3. Inserir informações inválidas do cartão (número incorreto ou expirado).<br>4. Confirmar o pagamento. |
 | **Resultado Esperado** | O sistema exibe mensagem de erro indicando que o pagamento foi recusado e permite ao cliente tentar novamente. |
-| **Status**          | O status do caso de teste (Passou/Falhou).                             |
-| **Evidências/Observações** | Screenshots, logs ou qualquer comentário adicional relacionado ao teste. |
+| **Status**          | Falhou                           |
+| **Evidências/Observações** | Apos concluir o pagamento a mensagem: "Your payment was declined, credit card invalid!" não apareceu e concluio o pagamento com informações inválidas |
 
 ## 5. Casos de teste - Manuais
 
@@ -876,7 +859,7 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 
 ---
 
-#### Requisito Funcional 2 (RF2): Login de Cliente
+#### 5.2.1 Requisito Funcional 2 (RF1): Login de Cliente
 
 ##### Cenário 1: Login com Credenciais Inválidas
 
@@ -888,12 +871,12 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 | **Objetivo**        | Validar que o sistema exibe mensagem de erro apropriada para login com credenciais inválidas. |
 | **Passos**          | 1. Acessar o site: `https://www.automationexercise.com`.<br>2. Clicar em "Signup / Login".<br>3. Preencher o campo "Email Address" com um e-mail inválido ou não registrado.<br>4. Preencher o campo "Password" com uma senha incorreta.<br>5. Clicar em "Login". |
 | **Resultado Esperado** | O sistema exibe a mensagem de erro "Your email or password is incorrect!" e o login não é efetuado. |
-| **Status**          | O status do caso de teste (Passou/Falhou).                             |
-| **Evidências/Observações** | Screenshots, logs ou qualquer comentário adicional relacionado ao teste. |
+| **Status**          | Passou.                             |
+| **Evidências/Observações** | Apos inserir os dados inválidos, exibiu uma mensagem de erro:"Your email or password is incorrect!"! Não sendo possivel fazer o login com um e-mail não registrado |
 
 ---
 
-####  Requisito Funcional 1 (RF1): Cadastro de Cliente
+#### 5.2.2 Requisito Funcional 1 (RF2): Cadastro de Cliente
 
 ##### Cenário 2: Cadastro com Informações Inválidas
 
@@ -905,11 +888,43 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 | **Objetivo**        | Validar que o sistema exibe mensagens de erro apropriadas ao tentar cadastrar informações inválidas. |
 | **Passos**          | 1. Acessar o site: `https://www.automationexercise.com`.<br>2. Clicar em "Signup / Login".<br>3. Preencher o campo "Name" com um nome válido.<br>4. Preencher o campo "Email Address" com um e-mail já registrado no sistema.<br>5. Clicar em "Signup". |
 | **Resultado Esperado** | O sistema exibe a mensagem de erro "Email Address already exists!" e o cadastro não é realizado. |
-| **Status**          | O status do caso de teste (Passou/Falhou).                             |
-| **Evidências/Observações** | Screenshots, logs ou qualquer comentário adicional relacionado ao teste. |
+| **Status**          | Passou.                            |
+| **Evidências/Observações** | Apos inserir os dados inválidos, exibiu uma mensagem de erro: "Email Address already exist!"! Não sendo possivel fazer o cadastro com um e-mail já registrado. |
+
+---
+### 5.2.3 Requisito Funcional 3 (RF3): Entrar em Contato
+
+### Caso de Teste 2: Entrar em Contato (Contact Us)
+
+| Campo               | Descrição                                                              |
+|---------------------|------------------------------------------------------------------------|
+| **Requisito**       | id UC10: Entrar em Contato (Contact Us)                               |
+| **Cenário de Teste**| O cliente preenche o formulário de contato para entrar em comunicação com a loja. |
+| **ID do Caso**      | CT-UC10-001                                                           |
+| **Objetivo**        | Validar que o sistema permite ao cliente enviar uma mensagem pelo formulário de contato. |
+| **Passos**          | 1. Acessar o site: `https://www.automationexercise.com`.<br>2. Clicar no link "Contact Us" no rodapé.<br>3. Preencher o formulário com nome, e-mail, assunto e mensagem.<br>4. Clicar no botão "Submit". |
+| **Resultado Esperado** | O sistema exibe a mensagem de sucesso "Success! Your details have been submitted successfully" |
+| **Status**          | Passou                                              |
+| **Evidências/Observações** | O sistema exibe a mensagem: "Success! Your details have been submitted successfully." apos preencher o formulário! |
 
 ---
 
+### 5.2.3 Requisito Funcional 3 (RF4): Avaliar Produto
+
+##### Cenário 1: Avaliar Produto
+
+| Campo               | Descrição                                                              |
+|---------------------|------------------------------------------------------------------------|
+| **Requisito**       | id UC9: Avaliação e Feedback de Produtos                              |
+| **Cenário de Teste**| O cliente avalia um produto adquirido no sistema.                      |
+| **ID do Caso**      | CT-UC9-001                                                            |
+| **Objetivo**        | Validar que o sistema permite ao cliente avaliar um produto comprado. |
+| **Passos**          | 1. Acessar o site: `https://www.automationexercise.com`.<br>2. Fazer login com um cliente que já tenha comprado um produto.<br>3. Navegar até a página de um produto adquirido.<br>4. Preencher o formulário de avaliação com nome, e-mail e descrição.<br>5. Clicar em "Submit". |
+| **Resultado Esperado** | O sistema exibe a mensagem: "Thank for you review!". |
+| **Status**          | Passou.                                               |
+| **Evidências/Observações** | O sistema apos preencher o formulário de avaliação do produto, exibe a mensagem: "Thank for you review!".  |
+
+---
 
 ## 6 - Recursos
    
