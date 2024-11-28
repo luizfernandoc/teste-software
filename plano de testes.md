@@ -1,19 +1,11 @@
 # Plano de Teste - IEEE 829
 
 **Nome do Sistema**: E-commerce
-
+**Link do site**: https://www.automationexercise.com/
 
 *versão 1.0*
 
    *Autores: Gabriel Denti, Guilherme Jenner, Luiz Fernando e Rodolfo Pedro.*
-
-
-
-## Histórico das alterações
-
-   Data    | Versão |    Descrição   | Autor(a)
------------|--------|----------------|-----------------
-12/11/2024 |  1.0   | Release incial | Luiz Fernando Contarato
 
 
 
@@ -739,7 +731,7 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
 </table>
 <br/>
 
-## 4. Casos de teste
+## 4. Casos de teste - Automatizados
 
 ### 4.1 Introdução
 
@@ -807,22 +799,7 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 
 ---
 
-#### 4.3.4 Requisito Não Funcional 1 (RNF1): Tempo de Resposta
-
-##### Cenário 1: Tempo de carregamento das páginas
-
-| Campo               | Descrição                                                              |
-|---------------------|------------------------------------------------------------------------|
-| **Requisito**       | RNF1                                                                  |
-| **Cenário de Teste**| Medir o tempo de carregamento das páginas principais.                  |
-| **ID do Caso**      | CT-RNF1-001                                                           |
-| **Objetivo**        | Garantir que o tempo de carregamento seja inferior a 2 segundos.       |
-| **Passos**          | 1. Acessar a página inicial.<br>2. Navegar para diferentes seções.<br>3. Medir o tempo de carregamento. |
-| **Resultado Esperado** | Todas as páginas carregam em até 2 segundos.                        |
-
----
-
-### 4.3.5 Requisito Funcional 4 (RF4): Finalizar Compra
+### 4.3.4 Requisito Funcional 4 (RF4): Finalizar Compra
 
 ##### Cenário 1: Finalizar compra com produtos disponíveis
 
@@ -837,7 +814,7 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 
 ---
 
-### 4.3.6 Requisito Funcional 5 (RF5): Pagamento
+### 4.3.5 Requisito Funcional 5 (RF5): Pagamento
 
 ##### Cenário 1: Pagamento com cartão de crédito válido
 
@@ -861,11 +838,32 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 | **Passos**          | 1. Ir para a página de checkout.<br>2. Selecionar pagamento por cartão de crédito.<br>3. Inserir informações inválidas do cartão (número incorreto ou expirado).<br>4. Confirmar o pagamento. |
 | **Resultado Esperado** | O sistema exibe mensagem de erro indicando que o pagamento foi recusado e permite ao cliente tentar novamente. |
 
-## 5 - Recursos
+## 5. Casos de teste - Manuais
+
+### 5.1 Introdução
+
+Abaixo os cenários e casos de teste necessários para validar os requisitos funcionais e não funcionais do sistema de e-commerce. Cada requisito é associado a cenários específicos que serão testados para garantir que o sistema opere conforme o esperado.
+
+---
+
+### 5.2 Estrutura de Caso de Teste
+
+| Campo               | Descrição                                                              |
+|---------------------|------------------------------------------------------------------------|
+| **Requisito**       | O requisito do sistema que está sendo validado.                       |
+| **Cenário de Teste**| Uma descrição da situação que será validada.                          |
+| **ID do Caso**      | Identificador único do caso de teste.                                  |
+| **Objetivo**        | O objetivo do caso de teste.                                           |
+| **Passos**          | Passos para executar o caso de teste.                                  |
+| **Resultado Esperado** | O comportamento esperado do sistema após os passos serem executados.|
+
+---
+
+## 6 - Recursos
    
    Esta seção deve descrever os recursos humanos, de ambiente de teste (hardware e software) e de ferramentas de automatização de testes necessários para execução dos testes que devem ser descritos nas subseções que seguem.
 
-### 5.1 - Ambiente de teste - Software e Hardware
+### 6.1 - Ambiente de teste - Software e Hardware
 
    Software: Sistema operacional Windows 10, Linux, navegadores Chrome e Firefox (últimas versões).<br/>
 
@@ -874,7 +872,7 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
    Rede: Simulação de diferentes condições de rede (Wi-Fi, 3G, 4G) para avaliar a experiência em cenários reais.<br/>
 
 
-### 5.2 - Ferramenta de teste
+### 6.2 - Ferramenta de teste
 
    Selenium: Para automação dos testes de interface.<br/>
 
@@ -883,7 +881,7 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
    OWASP ZAP: Para testes de segurança e verificação de vulnerabilidades.<br/>
 
 
-## 6.0 - Template de Reporte de Defeitos
+## 7.0 - Template de Reporte de Defeitos
 
   Este template serve para facilitar o registro de bugs, garantindo que todas as informações essenciais estejam documentadas de forma clara. Use os campos abaixo para descrever o problema em detalhes:
   
@@ -901,7 +899,7 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 
 ---
 
-### 6.1 Informações Básicas
+### 7.1 Informações Básicas
 
 - **Data do Relato:** [Data em que o bug foi reportado]
 - **Relatado por:** [Nome do responsável por relatar o bug]
@@ -910,7 +908,7 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 - **Severidade:** [Crítica, Alta, Média, Baixa]
 
 
-### 6.2 Descrição do Bug
+### 7.2 Descrição do Bug
 
 **Descrição Completa**<br/>
 
@@ -933,7 +931,7 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 
   [Explique o comportamento atual observado no sistema.]
 
-### 6.3 Anexos
+### 7.3 Anexos
 
 **Capturas de tela**<br/>
 
@@ -947,7 +945,7 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 
   [Logs ou mensagens de erro do sistema relacionados, se aplicável]
 
-### 6.4 Ambiente de Teste
+### 7.4 Ambiente de Teste
 
 **Desktop (complete as seguintes informações):** <br/>
 
@@ -965,7 +963,7 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
   - Rede:[Wi-Fi, 3G, 4G, etc. (se relevante)]
 
 
-### 6.6 Status do Bug
+### 7.6 Status do Bug
 
 - **Status Atual:**
   - [ ] Novo
@@ -979,34 +977,19 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 - **Versão de Correção:** [Versão do sistema onde a correção foi aplicada]
 
 ---
+## 8. Critérios de Conclusão dos Testes
 
-
-## 7. Critérios de Sucesso e Falha dos Testes
-
-- **Critério de Sucesso**: O teste será considerado bem-sucedido se:<br/>
-  - O tempo de resposta for inferior a 2 segundos para páginas principais.
-  - Nenhum erro crítico for encontrado.
-  - Todos os requisitos de privacidade da LGPD forem atendidos.
-- **Critério de Falha**: O teste será considerado uma falha se:<br/>
-  - O tempo de resposta ultrapassar o limite definido.
-  - Erros críticos comprometerem a operação do sistema.
-  - Não conformidade com requisitos essenciais de segurança de dados.
-
+- **Critério de Conclusão**: O teste será considerado completo se:
+  - 100% dos casos de uso e requisitos críticos forem testados e aprovados.
+  - Nenhum erro de alta prioridade permanecer pendente.
  
-## 8. Cronograma de Testes
+## 9. Cronograma de Testes
 
 | Atividade           | Data de Início | Data de Término | Responsável       |
 |---------------------|----------------|-----------------|-------------------|
 | Teste de Interface  | dd/mm/aaaa     | dd/mm/aaaa      | Gabriel Denti     |
 | Teste de Integração | dd/mm/aaaa     | dd/mm/aaaa      | Guilherme Jenner  |
 | Teste de Segurança  | dd/mm/aaaa     | dd/mm/aaaa      | Luiz Fernando     |
-
-
-## 9. Critérios de Conclusão dos Testes
-
-- **Critério de Conclusão**: O teste será considerado completo se:
-  - 100% dos casos de uso e requisitos críticos forem testados e aprovados.
-  - Nenhum erro de alta prioridade permanecer pendente.
 
 
 ## 10 - Cronograma
