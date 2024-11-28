@@ -860,6 +860,37 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 
 ---
 
+#### Requisito Funcional 2 (RF2): Login de Cliente
+
+##### Cenário 1: Login com Credenciais Inválidas
+
+| Campo               | Descrição                                                              |
+|---------------------|------------------------------------------------------------------------|
+| **Requisito**       | id UC2: Login de Cliente                                               |
+| **Cenário de Teste**| O cliente tenta realizar login com e-mail ou senha inválidos.          |
+| **ID do Caso**      | CT-UC2-002                                                            |
+| **Objetivo**        | Validar que o sistema exibe mensagem de erro apropriada para login com credenciais inválidas. |
+| **Passos**          | 1. Acessar o site: `https://www.automationexercise.com`.<br>2. Clicar em "Signup / Login".<br>3. Preencher o campo "Email Address" com um e-mail inválido ou não registrado.<br>4. Preencher o campo "Password" com uma senha incorreta.<br>5. Clicar em "Login". |
+| **Resultado Esperado** | O sistema exibe a mensagem de erro "Your email or password is incorrect!" e o login não é efetuado. |
+
+---
+
+####  Requisito Funcional 1 (RF1): Cadastro de Cliente
+
+##### Cenário 2: Cadastro com Informações Inválidas
+
+| Campo               | Descrição                                                              |
+|---------------------|------------------------------------------------------------------------|
+| **Requisito**       | id UC1: Cadastro de Cliente                                            |
+| **Cenário de Teste**| O cliente tenta realizar cadastro com informações inválidas (e-mail já registrado ou campos obrigatórios vazios). |
+| **ID do Caso**      | CT-UC1-002                                                            |
+| **Objetivo**        | Validar que o sistema exibe mensagens de erro apropriadas ao tentar cadastrar informações inválidas. |
+| **Passos**          | 1. Acessar o site: `https://www.automationexercise.com`.<br>2. Clicar em "Signup / Login".<br>3. Preencher o campo "Name" com um nome válido.<br>4. Preencher o campo "Email Address" com um e-mail já registrado no sistema.<br>5. Clicar em "Signup". |
+| **Resultado Esperado** | O sistema exibe a mensagem de erro "Email Address already exists!" e o cadastro não é realizado. |
+
+---
+
+
 ## 6 - Recursos
    
    Esta seção deve descrever os recursos humanos, de ambiente de teste (hardware e software) e de ferramentas de automatização de testes necessários para execução dos testes que devem ser descritos nas subseções que seguem.
