@@ -948,6 +948,103 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 
 ---
 
+##### Cenário 1: Bug Report
+
+# Reporte de Defeitos
+
+---
+
+### Título do Bug
+Redirecionamento incorreto após logout
+
+### Labels
+Logout, Redirecionamento, RF5
+
+### Responsáveis
+[Definir responsável pelo acompanhamento e correção]
+
+---
+
+## 7.1 Informações Básicas
+
+- **Data do Relato:** 28/11/2024  
+- **Relatado por:** [Seu Nome]  
+- **Versão do Sistema:** [Informar a versão utilizada no momento do teste]  
+- **Prioridade:** Média  
+- **Severidade:** Média  
+
+---
+
+## 7.2 Descrição do Bug
+
+**Descrição Completa**  
+O sistema realiza o logout do cliente autenticado com sucesso, mas redireciona incorretamente o usuário para a página de "Login/Criar Conta" em vez da página inicial conforme esperado.  
+
+**Para Reproduzir**  
+Passos para reproduzir o comportamento:  
+1. Acesse o site: `https://www.automationexercise.com`.  
+2. Faça login utilizando e-mail e senha válidos.  
+3. Após estar autenticado, clique no botão "Logout" disponível no menu ou na página do cliente.  
+
+**Resultado Esperado**  
+O cliente deve ser deslogado com sucesso e redirecionado para a página inicial do sistema.  
+
+**Resultado Atual**  
+O cliente é deslogado corretamente, mas redirecionado para a página de "Login/Criar Conta".  
+
+---
+
+## 7.3 Anexos
+
+- **Capturas de Tela**  
+[Insira aqui links ou imagens que evidenciem o comportamento do sistema durante o bug]  
+
+- **Vídeos**  
+[Adicione links ou vídeos que mostram os passos para reproduzir o bug]  
+
+- **Logs de Erro**  
+[Adicione logs ou mensagens de erro relacionadas ao problema, se disponíveis]  
+
+---
+
+## 7.4 Ambiente de Teste
+
+### Desktop  
+- **Sistema Operacional:** Windows 11  
+- **Navegador:** Google Chrome  
+- **Versão do Navegador:** 119.0  
+- **Rede:** Wi-Fi  
+
+### Smartphone  
+- **Dispositivo:** Samsung Galaxy S22  
+- **Sistema Operacional:** Android 13  
+- **Navegador:** Chrome para Android  
+- **Versão do Navegador:** 119.0  
+- **Rede:** Wi-Fi  
+
+---
+
+## 7.6 Status do Bug
+
+- **Status Atual:**  
+  - [x] Novo  
+  - [ ] Em Análise  
+  - [ ] Em Progresso  
+  - [ ] Resolvido  
+  - [ ] Não Reproduzível  
+  - [ ] Rejeitado  
+
+- **Data de Resolução:** [A ser definido]  
+- **Versão de Correção:** [A ser informado após correção]  
+
+---
+
+### Observações Adicionais
+
+O problema pode estar relacionado ao fluxo de redirecionamento configurado no sistema após a ação de logout. Verificar as rotas ou lógica de controle para garantir que o destino seja a página inicial.
+
+---
+
 ##### Cenário 2: Acessar funcionalidades restrita para usuários autenticados
 
 | Campo               | Descrição                                                              |
