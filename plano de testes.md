@@ -65,6 +65,11 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
 | id UC8                       | Aplicação de Cupons de Desconto    |
 | id UC9                       | Avaliação e Feedback de Produtos   |
 | id UC10                      | Entrar em Contato (Contact Us)     |
+| id UC11                      | Logout de Cliente                  |
+| id UC12                      | Inscrição de Cliente               |
+| id UC13                      | Pesquisa de Produto                 |
+| id UC14                      | Visualização de Produtos por Categoria|
+
 
 <br/>
 
@@ -923,6 +928,89 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 | **Resultado Esperado** | O sistema exibe a mensagem: "Thank for you review!". |
 | **Status**          | Passou.                                               |
 | **Evidências/Observações** | O sistema apos preencher o formulário de avaliação do produto, exibe a mensagem: "Thank for you review!".  |
+
+---
+
+### 5.2.5 Requisito Funcional 5 (RF5): Realizar Logout
+
+##### Cenário 1: Sair da conta que está logada no sistema.
+
+| Campo               | Descrição                                                              |
+|---------------------|------------------------------------------------------------------------|
+| **Requisito**       | id UC11: Logout de Cliente                                             |
+| **Cenário de Teste**| O cliente realiza logout com sucesso após estar autenticado no sistema.|
+| **ID do Caso**      | CT-UC11-001                                                            |
+| **Objetivo**        | Validar que o sistema realiza o logout corretamente e redireciona o cliente para a página inicial. |
+| **Passos**          | 1. Acessar o site: `https://www.automationexercise.com`.<br>2. Fazer login com e-mail e senha válidos.<br>3. Após o login, clicar no botão "Logout" disponível no menu ou na página do cliente.|
+| **Resultado Esperado** | O sistema efetua o logout com sucesso, redireciona o cliente para a página inicial. |
+| **Status**          | Falhou.                                                               |
+| **Evidências/Observações** | Logout é feito com sucesso, mas o sistema redireciona para a pagina de login / criar usuário.  |
+
+---
+
+##### Cenário 2: Acessar funcionalidades restrita para usuários autenticados
+
+| Campo               | Descrição                                                              |
+|---------------------|------------------------------------------------------------------------|
+| **Requisito**       | id UC11: Logout de Cliente                                             |
+| **Cenário de Teste**| O cliente realiza logout com sucesso após estar autenticado no sistema.|
+| **ID do Caso**      | CT-UC11-002                                                            |
+| **Objetivo**        | Validar que o sistema realiza o logout corretamente e impede acesso à funções restritas. |
+| **Passos**          | 1. Acessar o site: https://www.automationexercise.com. <br> 2. Fazer login com e-mail e senha válidos. <br> 3. Após o login, acessar uma funcionalidade restrita (por exemplo, "Meus Pedidos" ou "Perfil"). <br> 4. Realizar logout clicando no botão "Logout". <br> 5. Tentar acessar novamente a funcionalidade restrita. |
+| **Resultado Esperado** | O sistema efetua o logout com sucesso, e as funcionalidades restritas desaparecem. |
+| **Status**          | Passou.                                                               |
+| **Evidências/Observações** | O sistema efetua o logout com sucesso, e as funcionalidades restritas desapareceram.  |
+
+---
+
+### 5.2.6 Requisito Funcional 6 (RF6): Realizar Inscrição
+
+##### Cenário 1: Realizar Inscrição
+
+| Campo               | Descrição                                                              |
+|---------------------|------------------------------------------------------------------------|
+| **Requisito**       | id UC12: Inscrição de Cliente                                          |
+| **Cenário de Teste**| O cliente preenche o campo de "Subscription" com um e-mail válido.     |
+| **ID do Caso**      | CT-UC12-001                                                            |
+| **Objetivo**        | Validar que o sistema realiza o logout corretamente e redireciona o cliente para a página inicial. |
+| **Passos**          | 1. Acessar o site: `https://www.automationexercise.com`.<br>2. Descer a tela até o final da página.<br>3. Preencher o campo "Subscription" com um e-mail válido. 4. Clicar no botão de inscrição (por exemplo, "Subscribe").|
+| **Resultado Esperado** | O sistema exibe a mensagem "You have been successfully subscribed!" e o cliente é inscrito na lista de assinantes. |
+| **Status**          | Passou.                                               |
+| **Evidências/Observações** | Após preencher o e-mail válido e clicar em "Subscribe", a mensagem de sucesso foi exibida, confirmando a inscrição.  |
+
+---
+
+### 5.2.7 Requisito Funcional 7 (RF7): Pesquisar Produto
+
+##### Cenário 1: Pesquisa de Produto
+
+| Campo               | Descrição                                                              |
+|---------------------|------------------------------------------------------------------------|
+| **Requisito**       | id UC13: Pesquisa de Produto                                           |
+| **Cenário de Teste**| O cliente pesquisa um produto utilizando a barra de pesquisa.          |
+| **ID do Caso**      | CT-UC13-001                                                            |
+| **Objetivo**        | Validar que o sistema exibe corretamente os produtos relacionados à pesquisa realizada. |
+| **Passos**          | 1. Acessar o site: `https://www.automationexercise.com`.<br>2. Clicar no botão "Products".<br>3. Digitar o nome de um produto na barra de pesquisa e clicar no botão de pesquisa. <br>4. Verificar se todos os produtos relacionados à pesquisa são exibidos corretamente.|
+| **Resultado Esperado** | O sistema mostra todos os produtos que correspondem ao nome pesquisado. |
+| **Status**          | Passou.                                               |
+| **Evidências/Observações** | A pesquisa foi realizada corretamente, exibindo os produtos correspondentes ao nome inserido.  |
+
+---
+
+### 5.2.8 Requisito Funcional 8 (RF8): Visualização de Produtos por Categoria 
+
+##### Cenário 1: Sair da conta que está logada no sistema.
+
+| Campo               | Descrição                                                              |
+|---------------------|------------------------------------------------------------------------|
+| **Requisito**       | id UC14: Visualização de Produtos por Categoria                        |
+| **Cenário de Teste**| O cliente visualiza os produtos de uma categoria e navega por subcategorias.     |
+| **ID do Caso**      | CT-UC14-001                                                            |
+| **Objetivo**        | Validar que o sistema exibe corretamente os produtos por categoria e permite navegar entre subcategorias. |
+| **Passos**          | 1. Acessar o site: `https://www.automationexercise.com`.<br>2. Verificar se as categorias estão visíveis na barra lateral esquerda.<br>3. Clicar na categoria "Women". 5. Clicar em qualquer link de subcategoria sob a categoria "Women", por exemplo: "Dress". 6. Na barra lateral esquerda, clicar em qualquer link de subcategoria da categoria "Men". 8. Verificar se o usuário é redirecionado para a página da subcategoria selecionada. |
+| **Resultado Esperado** | O sistema exibe os produtos corretamente para a categoria selecionada, e o cliente é redirecionado para a subcategoria escolhida. |
+| **Status**          | Passou.                                               |
+| **Evidências/Observações** | A navegação entre as categorias e subcategorias foi realizada corretamente, exibindo os produtos relacionados.  |
 
 ---
 
