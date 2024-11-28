@@ -914,7 +914,7 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 
 ---
 
-### 5.2.4 Requisito Funcional 3 (RF4): Avaliar Produto
+### 5.2.4 Requisito Funcional 4 (RF4): Avaliar Produto
 
 ##### Cenário 1: Avaliar Produto
 
@@ -948,9 +948,9 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 
 ---
 
-##### Cenário 1: Bug Report
+#### Cenário 1: Bug Report
 
-# Reporte de Defeitos
+#### Reporte de Defeitos
 
 ### Título do Bug
 Redirecionamento incorreto após logout
