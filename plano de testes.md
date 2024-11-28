@@ -990,19 +990,6 @@ O cliente é deslogado corretamente, mas redirecionado para a página de "Login/
 
 ---
 
-## Anexos
-
-- **Capturas de Tela**  
-[Insira aqui links ou imagens que evidenciem o comportamento do sistema durante o bug]  
-
-- **Vídeos**  
-[Adicione links ou vídeos que mostram os passos para reproduzir o bug]  
-
-- **Logs de Erro**  
-[Adicione logs ou mensagens de erro relacionadas ao problema, se disponíveis]  
-
----
-
 ## Ambiente de Teste
 
 ### Desktop  
