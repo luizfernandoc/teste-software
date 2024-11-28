@@ -769,8 +769,8 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 | **Objetivo**        | Validar que o sistema aceita cadastros com dados corretos.             |
 | **Passos**          | 1. Acessar a página de cadastro.<br>2. Preencher nome, e-mail e senha válidos.<br>3. Confirmar o cadastro. |
 | **Resultado Esperado** | O sistema exibe uma mensagem de sucesso e registra o cliente.      |
-| **Status**          | O status do caso de teste (Passou/Falhou).                             |
-| **Evidências/Observações** | Screenshots, logs ou qualquer comentário adicional relacionado ao teste. |
+| **Status**          | Passou                            |
+| **Evidências/Observações** | Apos se cadastrar, preenchendo os dados necessários, o sistema exibe a seguinte mensagem: "Account Created!Congratulations! Your new account has been successfully created!You can now take advantage of member privileges to enhance your online shopping experience with us." |
 
 ---
 
@@ -786,8 +786,8 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 | **Objetivo**        | Validar que o sistema permite o acesso com credenciais válidas.        |
 | **Passos**          | 1. Acessar a página de login.<br>2. Inserir e-mail e senha válidos.<br>3. Confirmar o login. |
 | **Resultado Esperado** | O sistema redireciona o cliente para a página inicial logado.       |
-| **Status**          | O status do caso de teste (Passou/Falhou).                             |
-| **Evidências/Observações** | Screenshots, logs ou qualquer comentário adicional relacionado ao teste. |
+| **Status**          | Passou.                            |
+| **Evidências/Observações** | Apos o login o cliente é redirecionado para a página já logado, aparecendo visualmente na página: " Logged in as Usuario Valido Teste"! |
 
 ---
 
@@ -802,19 +802,19 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 | **ID do Caso**      | CT-RF3-001                                                            |
 | **Objetivo**        | Validar que o produto é adicionado corretamente ao carrinho.           |
 | **Passos**          | 1. Navegar até a página de produto.<br>2. Selecionar um produto.<br>3. Clicar em "Adicionar ao Carrinho". |
-| **Resultado Esperado** | O produto é exibido no carrinho com a quantidade e preço corretos.  |
-| **Status**          | O status do caso de teste (Passou/Falhou).                             |
-| **Evidências/Observações** | Screenshots, logs ou qualquer comentário adicional relacionado ao teste. |
+| **Resultado Esperado** | Apos adicionar ao carrinho o sistema exibe uma mensagem confirmando que foi adicionado! .  |
+| **Status**          | Passou.                            |
+| **Evidências/Observações** | Apos adicionar ao carrinho o sistema exibe a mensagem: "Your product has been added to cart."! |
 
 ---
 
-### 4.3.5 Requisito Funcional 5 (RF4): Pagamento
+### 4.3.4 Requisito Funcional 5 (RF4): Pagamento
 
 ##### Cenário 1: Pagamento com cartão de crédito válido
 
 | Campo               | Descrição                                                              |
 |---------------------|------------------------------------------------------------------------|
-| **Requisito**       | RF5                                                                   |
+| **Requisito**       | RF4                                                                   |
 | **Cenário de Teste**| O cliente realiza o pagamento com um cartão de crédito válido.         |
 | **ID do Caso**      | CT-RF5-001                                                            |
 | **Objetivo**        | Validar que o sistema processa corretamente o pagamento com um cartão válido. |
@@ -827,7 +827,7 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 
 | Campo               | Descrição                                                              |
 |---------------------|------------------------------------------------------------------------|
-| **Requisito**       | RF5                                                                   |
+| **Requisito**       | RF4                                                                  |
 | **Cenário de Teste**| O cliente tenta realizar pagamento com um cartão inválido.             |
 | **ID do Caso**      | CT-RF5-002                                                            |
 | **Objetivo**        | Validar que o sistema rejeita o pagamento e exibe mensagem apropriada para cartões inválidos. |
@@ -909,7 +909,7 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 
 ---
 
-### 5.2.3 Requisito Funcional 3 (RF4): Avaliar Produto
+### 5.2.4 Requisito Funcional 3 (RF4): Avaliar Produto
 
 ##### Cenário 1: Avaliar Produto
 
