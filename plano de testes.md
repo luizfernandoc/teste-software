@@ -750,6 +750,8 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 | **Objetivo**        | O objetivo do caso de teste.                                           |
 | **Passos**          | Passos para executar o caso de teste.                                  |
 | **Resultado Esperado** | O comportamento esperado do sistema após os passos serem executados.|
+| **Status**          | O status do caso de teste (Passou/Falhou).                             |
+| **Evidências/Observações** | Screenshots, logs ou qualquer comentário adicional relacionado ao teste. |
 
 ---
 
@@ -767,6 +769,8 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 | **Objetivo**        | Validar que o sistema aceita cadastros com dados corretos.             |
 | **Passos**          | 1. Acessar a página de cadastro.<br>2. Preencher nome, e-mail e senha válidos.<br>3. Confirmar o cadastro. |
 | **Resultado Esperado** | O sistema exibe uma mensagem de sucesso e registra o cliente.      |
+| **Status**          | O status do caso de teste (Passou/Falhou).                             |
+| **Evidências/Observações** | Screenshots, logs ou qualquer comentário adicional relacionado ao teste. |
 
 ---
 
@@ -782,6 +786,8 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 | **Objetivo**        | Validar que o sistema permite o acesso com credenciais válidas.        |
 | **Passos**          | 1. Acessar a página de login.<br>2. Inserir e-mail e senha válidos.<br>3. Confirmar o login. |
 | **Resultado Esperado** | O sistema redireciona o cliente para a página inicial logado.       |
+| **Status**          | O status do caso de teste (Passou/Falhou).                             |
+| **Evidências/Observações** | Screenshots, logs ou qualquer comentário adicional relacionado ao teste. |
 
 ---
 
@@ -797,6 +803,8 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 | **Objetivo**        | Validar que o produto é adicionado corretamente ao carrinho.           |
 | **Passos**          | 1. Navegar até a página de produto.<br>2. Selecionar um produto.<br>3. Clicar em "Adicionar ao Carrinho". |
 | **Resultado Esperado** | O produto é exibido no carrinho com a quantidade e preço corretos.  |
+| **Status**          | O status do caso de teste (Passou/Falhou).                             |
+| **Evidências/Observações** | Screenshots, logs ou qualquer comentário adicional relacionado ao teste. |
 
 ---
 
@@ -812,6 +820,8 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 | **Objetivo**        | Validar que o sistema processa corretamente a finalização do pedido quando os produtos estão disponíveis. |
 | **Passos**          | 1. Adicionar produtos ao carrinho.<br>2. Ir para a página de checkout.<br>3. Preencher as informações obrigatórias (endereço e método de pagamento).<br>4. Confirmar a compra. |
 | **Resultado Esperado** | O sistema gera um número de pedido, exibe mensagem de sucesso e atualiza o estoque. |
+| **Status**          | O status do caso de teste (Passou/Falhou).                             |
+| **Evidências/Observações** | Screenshots, logs ou qualquer comentário adicional relacionado ao teste. |
 
 ---
 
@@ -827,6 +837,8 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 | **Objetivo**        | Validar que o sistema processa corretamente o pagamento com um cartão válido. |
 | **Passos**          | 1. Ir para a página de checkout.<br>2. Selecionar pagamento por cartão de crédito.<br>3. Inserir informações válidas do cartão (número, validade, CVV).<br>4. Confirmar o pagamento. |
 | **Resultado Esperado** | O sistema aprova o pagamento, exibe mensagem de sucesso e gera o pedido. |
+| **Status**          | O status do caso de teste (Passou/Falhou).                             |
+| **Evidências/Observações** | Screenshots, logs ou qualquer comentário adicional relacionado ao teste. |
 
 ##### Cenário 2: Pagamento recusado por cartão inválido
 
@@ -838,6 +850,8 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 | **Objetivo**        | Validar que o sistema rejeita o pagamento e exibe mensagem apropriada para cartões inválidos. |
 | **Passos**          | 1. Ir para a página de checkout.<br>2. Selecionar pagamento por cartão de crédito.<br>3. Inserir informações inválidas do cartão (número incorreto ou expirado).<br>4. Confirmar o pagamento. |
 | **Resultado Esperado** | O sistema exibe mensagem de erro indicando que o pagamento foi recusado e permite ao cliente tentar novamente. |
+| **Status**          | O status do caso de teste (Passou/Falhou).                             |
+| **Evidências/Observações** | Screenshots, logs ou qualquer comentário adicional relacionado ao teste. |
 
 ## 5. Casos de teste - Manuais
 
@@ -857,6 +871,8 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 | **Objetivo**        | O objetivo do caso de teste.                                           |
 | **Passos**          | Passos para executar o caso de teste.                                  |
 | **Resultado Esperado** | O comportamento esperado do sistema após os passos serem executados.|
+| **Status**          | O status do caso de teste (Passou/Falhou).                             |
+| **Evidências/Observações** | Screenshots, logs ou qualquer comentário adicional relacionado ao teste. |
 
 ---
 
@@ -872,6 +888,8 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 | **Objetivo**        | Validar que o sistema exibe mensagem de erro apropriada para login com credenciais inválidas. |
 | **Passos**          | 1. Acessar o site: `https://www.automationexercise.com`.<br>2. Clicar em "Signup / Login".<br>3. Preencher o campo "Email Address" com um e-mail inválido ou não registrado.<br>4. Preencher o campo "Password" com uma senha incorreta.<br>5. Clicar em "Login". |
 | **Resultado Esperado** | O sistema exibe a mensagem de erro "Your email or password is incorrect!" e o login não é efetuado. |
+| **Status**          | O status do caso de teste (Passou/Falhou).                             |
+| **Evidências/Observações** | Screenshots, logs ou qualquer comentário adicional relacionado ao teste. |
 
 ---
 
@@ -887,6 +905,8 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 | **Objetivo**        | Validar que o sistema exibe mensagens de erro apropriadas ao tentar cadastrar informações inválidas. |
 | **Passos**          | 1. Acessar o site: `https://www.automationexercise.com`.<br>2. Clicar em "Signup / Login".<br>3. Preencher o campo "Name" com um nome válido.<br>4. Preencher o campo "Email Address" com um e-mail já registrado no sistema.<br>5. Clicar em "Signup". |
 | **Resultado Esperado** | O sistema exibe a mensagem de erro "Email Address already exists!" e o cadastro não é realizado. |
+| **Status**          | O status do caso de teste (Passou/Falhou).                             |
+| **Evidências/Observações** | Screenshots, logs ou qualquer comentário adicional relacionado ao teste. |
 
 ---
 
